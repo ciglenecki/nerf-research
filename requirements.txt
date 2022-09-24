@@ -2,3 +2,4 @@ torch
 torch-vision
 matplotlib
 numpy
+black
