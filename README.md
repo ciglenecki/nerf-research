@@ -22,29 +22,23 @@
 - reading Nerfies: Deformable Neural Radiance Fields
 - reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
-## Todo
+## To-do
 
 - [ ] setup cuda zesoi and run training there with instant-ngp
 
-## Resources:
-https://dellaert.github.io/NeRF22/ list of nerfs
-
-# Nerfies: Deformable Neural Radiance Fields
+## Nerfies: Deformable Neural Radiance Fields
 
 https://nerfies.github.io/
 
-## Abstract
-
 - deformation field: wrap each observed point into deformation field (MLP) which is also optimized
 - coarse-to-fine optimization: start by zeroing out the higher frequency at the start of the optimization (low level details) and the network will learn smooth deformations. Later, introduce higher frequencies
-- elastic regulairzation (?)
 - two phones: one phone can be used for training while the other can generate test data
 
-## 1. Introduction
+### 1. Introduction
 
 "Deformation field is conditioned on a per-image learned latent code" => this suggests that the deformation field varies between each observation
 
-## 3. Deformable Neural Radiance Fields
+### 3. Deformable Neural Radiance Fields
 
 ![](imgs/nerfies-arh.jpg)
 
@@ -53,9 +47,8 @@ https://nerfies.github.io/
 - deformation field is key extension that allows representation of moving subjects
 - elastic regularization (3.3), background regularization (3.4), coarse-to-fine (3.5), has to be introduced to avoid under-constrained optimization of deformation field + NeRF
 
-## 3.1 NeRF
+### 3.1 NeRF -- memory refresh
 
-NeRF memory refresh:
 - NeRF is a function $F : ({\mathbf x,d,\psi_i}) \rightarrow ({\mathbf c}, \sigma)$ which maps:
   - 3D position ${\mathbf x} = (x,y,z)$ and
   - viewing direction $\mathbf{d} = (\phi, \theta)$
@@ -65,7 +58,7 @@ NeRF memory refresh:
 
 $\psi_i$ latent appearance code exists for each image and it **modulates the color output** to handle interpolation between exposure/white balanace between frames
 
-## 3.2 Neural Deformation Fields
+### 3.2 Neural Deformation Fields
 
 **Takeaway**: create a mapping which maps original points to a canoncial template using MLP and use rigid rotation (optimizing only one rotation instead of rotation for each point)
 
@@ -100,7 +93,7 @@ SE(3) paper snippet
 ![](imgs/nerfies-se3.jpg)
 </details>
 
-## 3.3 Elastic regularization
+### 3.3 Elastic regularization
 
 **Takeaway**: create jacobian and prenalize the deviation of signular values of $J$ from $1$ (closest rotation (?)) and prenalize large values. Large values are further penalized by Geman-McClure error function.
 
@@ -134,7 +127,7 @@ Weighting:
   - $T(t)$ is accumulated transmittance along the ray from $t_n$ to $t$ (the probability that ray ravels from $t_n$ to $t$ without hitting any other particle). The higher the value, the probability of "something being there" is smaller.
   - $\sigma_i$, how "dense" is the particle that is being hit? If the value is high, the particle is dense and the strength of the ray will be lower (next particle will recieve less 'energy' from the ray).
 
-## 3.4 Background regularization
+### 3.4 Background regularization
 
 **Takeaway**: Prevents background from moving. Given a set of 3D points in the scene which we know should be static, we can penalize any deformations at these points. It also aligns observation frame to canonical frame.
 
@@ -143,7 +136,7 @@ Background regularization: $L_{\mathrm{bg}}=\frac{1}{K} \sum_{k=1}^K\left\|T\lef
 Important: $x_k$ are static 3D points
 
 
-## 3.5 Coarse-to-fine deformation regularization
+### 3.5 Coarse-to-fine deformation regularization
 
 **Takeaway**: introduce parameter $\alpha$ that windows the fequency bands and use it in weight $w_j$. For each $\alpha$ increase new and higher frequencies are *unlocked* because their weights are no longer 0.
 
@@ -187,7 +180,7 @@ Positional encoding $\gamma_\alpha(x) = \left(\mathbf{x}, \cdots, w_k(\alpha) \s
 - $t$ current training iteration
 - $N$ number of training itterations until $\alpha$ reaches maximum number of frequencies $m$
 
-## Notes
+### Notes
 
 Non-rigid shape: shapes which change position/rotation but also position of individual parts of the object. The problem is how to map the previous point to the new one.
 ![](./imgs/nerfies-non-rigid.jpg)
@@ -195,10 +188,10 @@ Jacobian - matrix of gradients (partial derivatives)
 
 ![](imgs/jacobian.jpg)
 
-# Mip-NeRF 360: Unbounded
+## Mip-NeRF 360: Unbounded
 https://jonbarron.info/mipnerf360/
 
-## 1. Introduction
+### 1. Introduction
 
 Problems with NERF:
 
@@ -215,11 +208,11 @@ Mip:
 Integradted positional encoding: generalization of NeRF's positional encoding (allows a region of space to be featurized)
   - it encodes 3d position and its surrounding Gaussian region
 
-## 2. Related work
+### 2. Related work
 
-## 5 Conclusion
+### 5 Conclusion
 
-## Notes
+### Notes
 
 - trains single NN that models the scene at multiple scales
 - cats cones and encodes positions and sizes of conical frustums
@@ -231,6 +224,10 @@ Integradted positional encoding: generalization of NeRF's positional encoding (a
 - reduces avg. error by 17%
 - reduces avg. error by 60% on a challenging multiscale variant dataset
 - frustum - portion of a solid (normally a pyramid or a cone) that lies between one or two parallel planes cutting it
+
+## Resources:
+https://dellaert.github.io/NeRF22/ list of nerfs
+
 
 ## Technical
 
