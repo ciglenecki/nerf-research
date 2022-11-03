@@ -16,6 +16,7 @@
 2022-10-27:
 
 - caculator results:
+  - ![](./imgs/first-caculator.jpg)
   - shot 10 images of a caculator with variying extreme angle differences https://www.youtube.com/watch?v=0SqYMH9wiwg
   - used nerfstudio to create a first result https://github.com/nerfstudio-project/nerfstudio
   - model "Nerfacto". "Flagship method which uses techniques from Mip-NeRF 360 and Instant-NGP." https://github.com/nerfstudio-project/nerfstudio/blob/main/nerfstudio/models/nerfacto.py
