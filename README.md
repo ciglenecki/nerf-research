@@ -15,7 +15,7 @@
 
 2022-10-27:
 
-- caculator results:
+- caculator results (out-of-the-box nerfacto model):
   - ![](./imgs/first-caculator.jpg)
   - shot 10 images of a caculator with variying extreme angle differences https://www.youtube.com/watch?v=0SqYMH9wiwg
   - used nerfstudio to create a first result https://github.com/nerfstudio-project/nerfstudio
