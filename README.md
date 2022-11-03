@@ -9,7 +9,9 @@
 - found "nerfacc" which offers efficient ray marching and volumetric rendering https://github.com/KAIR-BAIR/nerfacc
 - Light Field Neural Rendering: great for hologram reflection https://light-field-neural-rendering.github.io/
 - plan: further reserach and collecting more approaches to try and combine them:
-  - Direct Voxel Grid Optimization (CVPR 2022): Super-fast Convergence for Radiance Fields Reconstruction https://sunset1995.github.io/dvgo/
+  - plenoxels (no neural networks) https://alexyu.net/plenoxels/
+  - Mip-NeRF 360 (CVPR 2022) https://jonbarron.info/mipnerf360/
+  - Direct Voxel Grid Optimization (CVPR 2022) https://sunset1995.github.io/dvgo/
 
 2022-10-27:
 
