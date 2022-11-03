@@ -190,7 +190,7 @@ Jacobian - matrix of gradients (partial derivatives)
 
 ![](imgs/jacobian.jpg)
 
-## Mip-NeRF 360: Unbounded
+## (work in progress) Mip-NeRF 360: Unbounded
 https://jonbarron.info/mipnerf360/
 
 ### 1. Introduction
