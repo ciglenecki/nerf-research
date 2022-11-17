@@ -3,7 +3,18 @@
 
 ## Log
 
-2022-03-11:
+2022-11-17:
+- note taking and complete understanding of Mip-NeRF paper https://github.com/google/mipnerf
+- setup Docker image which installs everything needed to run the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio) project
+  - also because my local machine has <= 6GB VRAM and I'm forced to use the server 
+- took pictures and videos of my student id card in multiple conditions
+  - perfect lightning
+  - lower resolution image
+  - bad lightning conditions
+  - half blurry images
+  - video of the id card
+- plan: try out all dataset variations on models out of the box models: [instant-ngp](https://docs.nerf.studio/en/latest/nerfology/methods/instant_ngp.html), [mip-nerf](https://docs.nerf.studio/en/latest/nerfology/methods/mipnerf.html), [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html)
+2022-11-03:
 
 - note taking and complete understanding of Nerfies paper https://nerfies.github.io/
 - found "nerfacc" which offers efficient ray marching and volumetric rendering https://github.com/KAIR-BAIR/nerfacc
@@ -15,7 +26,7 @@
 
 2022-10-27:
 
-- caculator results (out-of-the-box nerfacto model):
+- caculator results (out-of-the-box [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html) model):
   - ![](./imgs/first-caculator.jpg)
   - shot 10 images of a caculator with variying extreme angle differences https://www.youtube.com/watch?v=0SqYMH9wiwg
   - used nerfstudio to create a first result https://github.com/nerfstudio-project/nerfstudio
@@ -26,10 +37,7 @@
 - reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
 ## To-do
-
-- [x] setup docker on zesoi server
-## instant-ngp
-test
+- [ ] .keep
 
 ## Nerfies: Deformable Neural Radiance Fields
 
@@ -330,8 +338,11 @@ Other:
 - frustum - portion of a solid (normally a pyramid or a cone) that lies between one or two parallel planes cutting it
 
 
+## (work in progress) instant-ngp
+.keep
 
 ## (work in progress) Mip-NeRF 360: Unbounded
+.keep
 
 ## Resources:
 https://dellaert.github.io/NeRF22/ list of nerfs
@@ -339,15 +350,11 @@ https://dellaert.github.io/NeRF22/ list of nerfs
 
 ## Technical
 
-run `sudo rm /etc/apt/sources.list.d/cuda*` after cuda uninstalling
-
-`export TCNN_CUDA_ARCHITECTURES=75` https://developer.nvidia.com/cuda-gpus
-
-when building colmap fix flags: https://github.com/colmap/colmap/issues/1418#issuecomment-1111406726
-
-Use ceres-solver 2.1.0 when building
-
-Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
+- run `sudo rm /etc/apt/sources.list.d/cuda*` after cuda uninstalling
+- `export TCNN_CUDA_ARCHITECTURES=75` https://developer.nvidia.com/cuda-gpus
+- when building colmap fix flags: https://github.com/colmap/colmap/issues/1418#issuecomment-1111406726
+- Use ceres-solver 2.1.0 when building
+- Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
 
 # Directory structure
 
