@@ -4,9 +4,10 @@
 ## Log
 
 2022-11-17:
+
 - note taking and complete understanding of Mip-NeRF paper https://github.com/google/mipnerf
 - setup Docker image which installs everything needed to run the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio) project
-  - also because my local machine has <= 6GB VRAM and I'm forced to use the server 
+  - also because my local machine has <= 6GB VRAM and I'm forced to use the server
 - took pictures and videos of my student id card in multiple conditions
   - perfect lightning
   - lower resolution image
@@ -14,6 +15,7 @@
   - half blurry images
   - video of the id card
 - plan: try out all dataset variations on models out of the box models: [instant-ngp](https://docs.nerf.studio/en/latest/nerfology/methods/instant_ngp.html), [mip-nerf](https://docs.nerf.studio/en/latest/nerfology/methods/mipnerf.html), [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html)
+
 2022-11-03:
 
 - note taking and complete understanding of Nerfies paper https://nerfies.github.io/
@@ -37,6 +39,7 @@
 - reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
 ## To-do
+
 - [ ] .keep
 
 ## Nerfies: Deformable Neural Radiance Fields
@@ -148,7 +151,6 @@ Background regularization: $L_{\mathrm{bg}}=\frac{1}{K} \sum_{k=1}^K\left\|T\lef
 
 Important: $x_k$ are static 3D points
 
-
 ### 3.5 Coarse-to-fine deformation regularization
 
 **Takeaway**: introduce parameter $\alpha$ that windows the fequency bands and use it in weight $w_j$. For each $\alpha$ increase new and higher frequencies are *unlocked* because their weights are no longer 0.
@@ -202,10 +204,10 @@ Jacobian - matrix of gradients (partial derivatives)
 ![](imgs/jacobian.jpg)
 
 ## Mip-NeRF
+
 https://github.com/google/mipnerf
 
-**Takeaway**: render anti-aliased conical frustums instead of rays which reduce artifacts and improve fine details. 7% faster than NeRF, 0.5 * NeRF size, reduced error from 17% to 60%. 
-
+**Takeaway**: render anti-aliased conical frustums instead of rays which reduce artifacts and improve fine details. 7% faster than NeRF, 0.5 * NeRF size, reduced error from 17% to 60%.
 
 ### 1. Introduction
 
@@ -214,23 +216,27 @@ https://github.com/google/mipnerf
 **Takeaway**:  The input to the mip-NeRF is 3D Gaussian that represents the region over which the radiance field should be integrated. Mip-NeRF’s scale-aware structure allows to merge "coarse" and "fine" MLP.
 
 integrated positional encoding (IPE):
+
 - encodes 3D positions **and its surrounding Gaussian region**
 - encode a **region of space** instead of a single point in space
 
 ### 2 Related work
 
 Anti-aliasing in rendering: supersampling or pre-filtering:
+
 - supersampling: cast multiple rays per pixel while rendering (sample closer to Nyquist frequency). Very impractical
 - prefiltering: low-pass-filtered version of the scene => decrease Nyquist frequency required to render the scene without aliasing. This can be precomputed ahead of time
   - prefiltering can be thought of as tracing a cone instead of a ray through each pixel
   - precomputed multiscale representation of the scene content (sparse voexel octree or a mipmap)
 
 Mip-NeRF related notes:
+
 - mutliscale representation cannot be precomupted because the **scene's geometry is not known ahead of time**
 - Mip-NeRF must learn prefiltered representation of the scene during training
 - scale is continuous instead aof discrete
 
 Scene representation for View Syntehsis:
+
 - mesh-based representations:
   - pros: can be stored efficiently, are compatible with graphics rendering pipelines
   - cons: gradiant-based methods to optimize mesh geometry are difficutl due to discontinuities and local minima
@@ -238,8 +244,8 @@ Scene representation for View Syntehsis:
   - gradient-based learning to train NN to predict voxel grid (3d cube made up of unit cubes) representation of scenes
 
 coordinate-based neural representations:
-- replacing discrete representations (3D Scenes) with MLP (NeRF)
 
+- replacing discrete representations (3D Scenes) with MLP (NeRF)
 
 ### 3 Method
 
@@ -248,7 +254,6 @@ coordinate-based neural representations:
 ### 3.1 Cone tracing and positional encoding
 
 **Takeaway**: Approximate the conical frustum with a multivariate Gaussian. Parameters ($\mu, \sigma$) can be found in closed form and are. IPE is expectation of a positionally-encoded coordinate distributed according to the Gaussian. Diagonal of $\Sigma$ is needed which is cheap. IPE is roughly as expensive as PE to construct. Hyperparameter $L$ (positional encoding) is not needed anymore.
-
 
 ![](imgs/mip_main_fig.jpg)
 
@@ -283,14 +288,15 @@ coordinate-based neural representations:
 
 ### 3.2 Architecture
 
-**Takeaway**: mip-NeRF works for single scale. One parameter $\Theta$ instead of two (classic NeRF). The loss function still includes "coarse" and "fine" losses. 
+**Takeaway**: mip-NeRF works for single scale. One parameter $\Theta$ instead of two (classic NeRF). The loss function still includes "coarse" and "fine" losses.
+
 - cast cone instead of ray
 - instead of sampling $n$ values for $t_k$ they sample $n+1$ values
 - features are passed into the MLP to produce density $\tau_k$ and color $c_k$
 - IPE encodes scale (no "coarse" and "fine") so MLP has only parameters $\Theta$, model is cut in half and renderings are more accurate
 - optimization problem: $\min _{\Theta} \sum_{\mathbf{r} \in \mathcal{R}}\left(\lambda\left\|\mathbf{C}^*(\mathbf{r})-\mathbf{C}\left(\mathbf{r} ; \Theta, \mathbf{t}^c\right)\right\|_2^2+\left\|\mathbf{C}^*(\mathbf{r})-\mathbf{C}\left(\mathbf{r} ; \Theta, \mathbf{t}^f\right)\right\|_2^2\right)$
 - "coarse" loss is balanced against "fine" loss by setting $\lambda = 0.1$
-- coarse samples $t^c$: produced with stratified sampling 
+- coarse samples $t^c$: produced with stratified sampling
 - fine samples $t^f$: sampled from resulting alpha compositing weights $w$ using inverse transform sampling
 - mip-nerf samples 128 coarse and 128 fine
 - weights $w$ for $t^f$ are modified $w_k^{\prime}=\frac{1}{2}\left(\max \left(w_{k-1}, w_k\right)+\max \left(w_k, w_{k+1}\right)\right)+\alpha$
@@ -298,26 +304,29 @@ coordinate-based neural representations:
 - $\alpha = 0.01$ is added before it is re-normalized to sum of 1
 
 ### 4. Results
+
 PSNR, SSIM, LPIPS
 
 Mip-NeRF reduces average error by 60% on this task
 and outperforms NeRF by a large margin on all metrics
-and all scales. 
-
+and all scales.
 
 ### Notes
 
 mip-NeRF hyperparameters:
+
 1. number of samples $N$ drawn at each of two levels (N = 128)
-2. histogram padding $\alpha$ on the coarse trainsmittance weights ($\alpha = 0.01$). Larger $\alpha$ baisases the final samples toward uniform distribution 
+2. histogram padding $\alpha$ on the coarse trainsmittance weights ($\alpha = 0.01$). Larger $\alpha$ baisases the final samples toward uniform distribution
 3. multiplier $\lambda$ on the "coarse" component of the loss function ($\lambda = 0.1$)
 
 Three more hyperparameters from NeRF are excluded:
+
 1. Number of samples $N_c$ drawn for "coarse" MLP
 2. Number of samples $N_f$ drawn for "fine" MLP
 3. Degree $L$ used for spatital positional encoding ($L = 10$)
 
 Activations:
+
 - softplus $log(1+exp(x-1))$ instead of ReLU
 - this is becase MLP sometimes emites negative values everywhere (gradients from $\tau$ are then zero and optimization fails)
 - shift by -1 is equivalent to initializing biases and produce $\tau$ to $-1$ and casues intial $\tau$ values to be small
@@ -326,6 +335,7 @@ Activations:
   - avoid saturation in tails of the sigmoid (black and white pixels)
 
 Other:
+
 - trains single NN that models the scene at multiple scales
 - cats cones and encodes positions and sizes of conical frustums
 - extends NeRF to represent the scene at a continuously-value scale
@@ -337,16 +347,17 @@ Other:
 - reduces avg. error by 60% on a challenging multiscale variant dataset
 - frustum - portion of a solid (normally a pyramid or a cone) that lies between one or two parallel planes cutting it
 
-
 ## (work in progress) instant-ngp
+
 .keep
 
 ## (work in progress) Mip-NeRF 360: Unbounded
+
 .keep
 
-## Resources:
-https://dellaert.github.io/NeRF22/ list of nerfs
+## Resources
 
+https://dellaert.github.io/NeRF22/ list of nerfs
 
 ## Technical
 
