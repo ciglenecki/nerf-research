@@ -16,52 +16,12 @@ RUN apt-get install -y \
     lsb-release \
     htop \
     ffmpeg \
-    wget
+    wget \
+    gcc \
+    g++
 
-# Colmap dependencies
-RUN apt-get install -y \
-    git \
-    cmake \
-    build-essential \
-    libboost-program-options-dev \
-    libboost-filesystem-dev \
-    libboost-graph-dev \
-    libboost-system-dev \
-    libboost-test-dev \
-    libeigen3-dev \
-    libsuitesparse-dev \
-    libfreeimage-dev \
-    libmetis-dev \
-    libgoogle-glog-dev \
-    libgflags-dev \
-    libglew-dev \
-    qtbase5-dev \
-    libqt5opengl5-dev \
-    libcgal-dev
-
-# ======= Ceras Solver ======= http://ceres-solver.org/installation.html
-RUN cd /root && wget http://ceres-solver.org/ceres-solver-2.1.0.tar.gz
-
-# Install Ceras dependencies
-RUN apt-get install -y cmake libgoogle-glog-dev libgflags-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev
-
-# Install Ceras 
-RUN cd /root && tar zxf ceres-solver-2.1.0.tar.gz && \
-    mkdir -p ceres-bin &&\
-    cd ceres-bin &&\
-    cmake ../ceres-solver-2.1.0 &&\
-    make -j$(nproc) &&\
-    make install
-
-# Download Colmap
-RUN cd /root && git clone https://github.com/colmap/colmap.git && \
-    cd colmap &&\
-    git checkout dev &&\
-    mkdir build &&\
-    cd build &&\
-    cmake .. &&\
-    make -j &&\
-    make install
+# Install colmap
+RUN apt-get install -y colmap
 
 COPY requirements.txt /tmp/requirements.txt
 COPY requirements-dev.txt /tmp/requirements-dev.txt
