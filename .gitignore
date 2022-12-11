@@ -1,4 +1,7 @@
 *ignoreme*
+data-raw/
+outputs/
+renders/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -367,6 +367,10 @@ https://dellaert.github.io/NeRF22/ list of nerfs
 - Use ceres-solver 2.1.0 when building
 - Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
 
+Permissions:
+find users id and group `echo $("$(id -u):$(id -g)")`
+Docker: `chown -R HERE:HERE directory`
+
 ## Commands
 
 Turn on viewer:
