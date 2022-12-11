@@ -367,6 +367,12 @@ https://dellaert.github.io/NeRF22/ list of nerfs
 - Use ceres-solver 2.1.0 when building
 - Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
 
+## Commands
+
+Turn on viewer:
+
+ns-train nerfacto --vis viewer --viewer.websocket-port=7010 --data data/student-id/light2/ --trainer.load-dir outputs/light2/nerfacto/2022-12-11_183713/nerfstudio_models --viewer.start-train False
+
 # Directory structure
 
     ├── LICENSE
