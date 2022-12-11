@@ -4,17 +4,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 ## Set timezone as it is required by some packages.
 ENV TZ=Europe/Berlin
 ## CUDA architectures, required by tiny-cuda-nn.
-ENV TCNN_CUDA_ARCHITECTURES=75
+ENV TCNN_CUDA_ARCHITECTURES=61
 ## CUDA Home, required to find CUDA in some packages.
 ENV CUDA_HOME="/usr/local/cuda"
 
 # Update and upgrade all packages
 RUN apt update -y
 RUN apt upgrade -y
-
-
-COPY requirements.txt /tmp/requirements.txt
-COPY requirements-dev.txt /tmp/requirements-dev.txt
 
 # Install python
 RUN apt install -y git python3 software-properties-common python3-pip python-is-python3
@@ -68,8 +64,6 @@ RUN git clone --branch v0.6.0 https://github.com/google/glog.git --single-branch
 # Add glog path to LD_LIBRARY_PATH.
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
 
-
-# WORKING
 # # Ceres solver
 RUN apt-get install libatlas-base-dev libsuitesparse-dev &&\
     wget https://github.com/ceres-solver/ceres-solver/archive/refs/tags/2.1.0.tar.gz &&\
@@ -91,13 +85,19 @@ RUN git clone https://github.com/colmap/colmap.git &&\
     make -j 2 &&\
     make install
 
+COPY requirements.txt /tmp/requirements.txt
+COPY requirements-dev.txt /tmp/requirements-dev.txt
+
 # Install python packets
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r /tmp/requirements.txt && pip install --no-cache-dir -r /tmp/requirements-dev.txt
 
+# Dependency for nerfstudio that has to be installed AFTER torch
+RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
 # Set the pretty and obvious prompt
 ENV TERM xterm-256color
 
-RUN echo 'export PS1="🐳  \[\033[1;36m\]\h \[\033[1;34m\]\W\[\033[0;35m\] \[\033[1;36m\]# \[\033[0m\]"' >> /root/.bashrc
+RUN echo 'export PS1="🐳  \[\033[1;36m\]\h \[\033[1;34m\]\w\[\033[0;35m\] \[\033[1;36m\]# \[\033[0m\]"' >> /root/.bashrc
 
 CMD ["bash", "-l"]

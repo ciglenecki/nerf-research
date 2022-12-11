@@ -4,4 +4,3 @@ torchvision
 matplotlib
 numpy
 nerfstudio
-git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
