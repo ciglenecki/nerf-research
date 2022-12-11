@@ -95,11 +95,6 @@ RUN git clone https://github.com/colmap/colmap.git &&\
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r /tmp/requirements.txt && pip install --no-cache-dir -r /tmp/requirements-dev.txt
 
-RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116
-
-RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
-
-RUN pip install nerfstudio
 # Set the pretty and obvious prompt
 ENV TERM xterm-256color
 
