@@ -1,5 +1,7 @@
-torch
-torch-vision
+# --extra-index-url https://download.pytorch.org/whl/cu116
+# torch
+# torchvision
 matplotlib
 numpy
-nerfstudio
+# nerfstudio
+# git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
