@@ -15,6 +15,12 @@
   - inference: 10 seconds for one frame (1920x1080)
 - next step: find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of cards
 
+2022-12-12:
+- it's always better to use videos (even if they are <1 sec) because 30fps of 1 second is 30 images
+- todo: caculate conversion of video to colmap
+- todo: caculate training time
+- downsamples of ns-process-data aren't used for anything. Is colmap used for anything?
+
 2022-11-17:
 
 - note taking and complete understanding of Mip-NeRF paper https://github.com/google/mipnerf
@@ -379,7 +385,22 @@ https://dellaert.github.io/NeRF22/ list of nerfs
 - Use ceres-solver 2.1.0 when building
 - Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
 
+Permissions:
+find users id and group `echo $("$(id -u):$(id -g)")`
+Docker: `chown -R HERE:HERE directory`
+
 ## Commands
+
+note: stay on port 7007 because the process is run inside of the docker which exposes the port to 7010
+Training:
+
+```bash
+/usr/bin/time --format='%C took %e seconds' \
+ns-train nerfacto --vis viewer \
+--logging.steps-per-log 2500 \
+--machine.num-gpus 1 \
+--data <HERE>
+```
 
 Turn on viewer:
 
