@@ -3,6 +3,18 @@
 
 ## Log
 
+2022-12-15:
+- trained nerfacto on my student card in multiple conditions: small, med, large video duration, shaky camera
+- results playlist https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
+- next step: introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
+- StyleNeRF: https://jiataogu.me/style_nerf/
+  - gpu: NVIDIA TITAN Xp
+  - colmap video to cloud point extraction => 15min
+  - nerfacto training: 45 min (30 000 steps)
+  - todo: check results for (15 000 steps)
+  - inference: 10 seconds for one frame (1920x1080)
+- next step: find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of cards
+
 2022-11-17:
 
 - note taking and complete understanding of Mip-NeRF paper https://github.com/google/mipnerf
