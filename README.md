@@ -3,7 +3,10 @@
 
 ## Log
 
+
 2022-12-15:
+- todo: train a nerf on a scene. Then freeze the MLP and fine-tune it by using NEW semantic segmentation images. The only thing you have to adjust is color, the depth can stay the same
+- todo: export mesh to blender and view it
 - trained nerfacto on my student card in multiple conditions: small, med, large video duration, shaky camera
 - results playlist https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
 - next step: introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
@@ -14,6 +17,7 @@
   - todo: check results for (15 000 steps)
   - inference: 10 seconds for one frame (1920x1080)
 - next step: find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of cards
+
 
 2022-12-12:
 - it's always better to use videos (even if they are <1 sec) because 30fps of 1 second is 30 images
