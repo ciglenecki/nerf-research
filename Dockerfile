@@ -89,15 +89,30 @@ COPY requirements.txt /tmp/requirements.txt
 COPY requirements-dev.txt /tmp/requirements-dev.txt
 
 # Install python packets
-RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir -r /tmp/requirements.txt && pip install --no-cache-dir -r /tmp/requirements-dev.txt
+RUN pip install --no-cache-dir --upgrade pip
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
 
 # Dependency for nerfstudio that has to be installed AFTER torch
 RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
-# Set the pretty and obvious prompt
-ENV TERM xterm-256color
+# Arguments required for setting the permissions
+ARG USER_NAME=root
+ARG USER_ID
+ARG GROUP_NAME
+ARG GROUP_ID
 
-RUN echo 'export PS1="🐳  \[\033[1;36m\]\h \[\033[1;34m\]\w\[\033[0;35m\] \[\033[1;36m\]# \[\033[0m\]"' >> /root/.bashrc
+# Create account in Docker Container with the same name and group as the current user who is building the Docker image.
+COPY docker_set_perms.sh /tmp/docker_set_perms.sh
+RUN chmod +x /tmp/docker_set_perms.sh && /tmp/docker_set_perms.sh $USER_ID $USER_NAME $GROUP_ID $GROUP_NAME
+
+USER $USER_NAME
+
+# Set the pretty and obvious prompts
+ENV TERM xterm-256color
+RUN echo 'export PS1="\A \[\033[1;36m\]\h\[\033[1;34m\] \w \[\033[0;015m\]\\$ \[$(tput sgr0)\]\[\033[0m\]"' >> ~/.bashrc
+
+# Set bash entrypoint location to home directory
+# WORKDIR $USER_HOME
 
 CMD ["bash", "-l"]

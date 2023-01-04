@@ -38,6 +38,14 @@
 ## declare an array variable
 
 
+# Render only
+ns-train nerfacto \
+--data data/v11_high_shakey_360 \
+--trainer.load-dir outputs/data-v11_high_shakey_360/nerfacto/2022-12-12_001633/nerfstudio_models \
+--viewer.start-train False
+
+--viewer.quit-on-train-completion True
+
 function train() {
 	echo "Running training"
 	declare -a datasets=("v3_low_motion" "v5_med_motion" "v12_high_motion_360")
