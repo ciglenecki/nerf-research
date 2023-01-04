@@ -3,15 +3,12 @@
 
 # Preprocess
 
+# ns-process-data video --num-downscales 0 --data DIRORVID --output DIR
+# ns-process-data video --num-downscales 0 --data data-raw/specimen_rgb.mp4 --output data/specimen_rgb
 
-# ns-process-data images --data data-raw/i12_med_handheld --output data/i12_med_handheld --num-downscales 0
-# ns-process-data images --data data-raw/i4_glare --output data/i4_glare --num-downscales 0
-# ns-process-data images --data data-raw/i4_images_dark --output data/i4_images_dark --num-downscales 0
-# ns-process-data video --data data-raw/v12_high_motion_360.mp4 --output data/v12_high_motion_360 --num-downscales 0
-# ns-process-data video --data data-raw/v3_low_motion.mp4 --output data/v3_low_motion --num-downscales 0
-# ns-process-data video --data data-raw/v4_med_motion_vertical_handheld.mp4 --output data/v4_med_motion_vertical_handheld --num-downscales 0
-# ns-process-data video --data data-raw/v5_med_motion.mp4 --output data/v5_med_motion --num-downscales 0
-# ns-process-data video --data data-raw/v6_med_motion_shakey_handheld.mp4 --output data/v6_med_motion_shakey_handheld --num-downscales 0
+# ns-process-data video --num-downscales 0 --data data-raw/specimen_rgb.mp4 --output data/specimen_card_mask --colmap_feature_extractor_kwargs "\-\-ImageReader.mask_path data/specimen_card_mask/images"
+
+# ns-process-data video --num-downscales 0 --data data-raw/specimen_rgb.mp4 --output data/specimen_hand_mask --colmap_feature_extractor_kwargs "\-\-ImageReader.mask_path data/specimen_hand_mask/images"
 
 
 # Training
