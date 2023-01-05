@@ -4,9 +4,11 @@
 ## Log
 
 2023-01-04:
+
+- Idea: don't use COLMAP's mask region. Simply further train the network on segmeted video.
 - Mask image regions (--colmap_feature_extractor_kwargs "\-\-ImageReader.mask_path data/specimen_hand_mask/images")
 - COLMAP supports masking of keypoints during feature extraction by passing a mask_path to a folder with image masks. For a given image, the corresponding mask must have the same sub-path below this root as the image has below image_path. The filename must be equal, aside from the added extension .png. For example, for an image image_path/abc/012.jpg, the mask would be mask_path/abc/012.jpg.png. No features will be extracted in regions, where the mask image is black (pixel intensity value 0 in grayscale).
-
+- how to open Colmap model? `Import Model -> sparse/0`
 
 2022-12-15:
 - todo: train a nerf on a scene. Then freeze the MLP and fine-tune it by using NEW semantic segmentation images. The only thing you have to adjust is color, the depth can stay the same
