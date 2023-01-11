@@ -35,11 +35,21 @@
 ## declare an array variable
 
 
+# Video rendering
+
+ns-train nerfacto --data data/specimen_rgb_segmented_frames --load-dir outputs/data-specimen_rgb/nerfacto/2023-01-05_001331/nerfstudio_models --pipeline.datamanager.camera-optimizer.scheduler.max-steps 20000
+
+
+ns-render --load-config outputs/data-specimen_rgb/nerfacto/2023-01-05_001331/config.yml --traj filename --camera-path-filename outputs/data-specimen_rgb_segmented_frames/nerfacto/2023-01-05_110458/camera_path.json --output-path renders/specimen.mp4
+
+
 # Render only
 ns-train nerfacto \
---data data/v11_high_shakey_360 \
---trainer.load-dir outputs/data-v11_high_shakey_360/nerfacto/2022-12-12_001633/nerfstudio_models \
+--data data/specimen_rgb_segmented_frames \
+--load-dir outputs/data-specimen_rgb/nerfacto/2023-01-05_001331/nerfstudio_models \
 --viewer.start-train False
+
+--pipeline.datamanager.camera-optimizer.scheduler.max-steps 20000
 
 --viewer.quit-on-train-completion True
 

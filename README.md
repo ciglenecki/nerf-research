@@ -3,33 +3,61 @@
 
 ## Log
 
+2023-01-05:
+- [x] train the model on RGB images, then finetune with sequence images but use only the subset of sequences
+- [ ] comapre results for different amount of steps:
+  - [ ] create a script which will automatically save models every N number of steps
+  - [ ] create a script which will evaluate results for multiple models trained on the same scene
+    - [ ] results should be ran from the same novel views
+    - [ ] results should include numeric metrics
+    - [ ] for each result save a detailed context (config)
+    - [ ] for each result note the time needed to train  
+- [ ] compare how lack of segmentation masks affects NeRF's results
+  - [ ] reduce number of frames (90%, 80% ... 10%), make sure to always include last and first frame for best results
+- [ ] check how do mistakes in segmentation affect the results
+  - [ ] create 5 frames, 1 has wrong segmentation (corner)
+  - [ ] check how do results look around the view which coresponds to that frame
+- [ ] explore hyperparameters
+  - [ ] results should be ran from the same novel views
+  - [ ] results should include numeric metrics
+  - [ ] research which hyperparameters make most sense to change
+  - [ ] create a script which will train multiple models (grid of parameters)
+  - [ ] for each result save a detailed context (config)
+  - [ ] for each result note the time needed to train
+- [ ] find a way to cut off material whose z depth is larger than the z depth of the id document (cut off everything that's in front of the id document)
+- [ ] export mesh to blender and view it
+- [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
+- [ ] find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of id cards
+  - [ ] for start, use 3 video footages
+  - [ ] export 3 colmaps
+  - [ ] train 3 models
+  - [ ] generate novel views
+- [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
+
 2023-01-04:
 
 - Idea: don't use COLMAP's mask region. Simply further train the network on segmeted video.
-- Mask image regions (--colmap_feature_extractor_kwargs "\-\-ImageReader.mask_path data/specimen_hand_mask/images")
-- COLMAP supports masking of keypoints during feature extraction by passing a mask_path to a folder with image masks. For a given image, the corresponding mask must have the same sub-path below this root as the image has below image_path. The filename must be equal, aside from the added extension .png. For example, for an image image_path/abc/012.jpg, the mask would be mask_path/abc/012.jpg.png. No features will be extracted in regions, where the mask image is black (pixel intensity value 0 in grayscale).
+- COLMAP mask regions:
+  - Mask image regions (--colmap_feature_extractor_kwargs "\-\-ImageReader.mask_path data/specimen_hand_mask/images")
+  - COLMAP supports masking of keypoints during feature extraction by passing a mask_path to a folder with image masks. For a given image, the corresponding mask must have the same sub-path below this root as the image has below image_path. The filename must be equal, aside from the added extension .png. For example, for an image image_path/abc/012.jpg, the mask would be mask_path/abc/012.jpg.png. No features will be extracted in regions, where the mask image is black (pixel intensity value 0 in grayscale).
 - how to open Colmap model? `Import Model -> sparse/0`
 
 2022-12-15:
-- todo: train a nerf on a scene. Then freeze the MLP and fine-tune it by using NEW semantic segmentation images. The only thing you have to adjust is color, the depth can stay the same
-- todo: export mesh to blender and view it
-- trained nerfacto on my student card in multiple conditions: small, med, large video duration, shaky camera
+- [x] train a nerf on a scene. Then freeze the MLP and fine-tune it by using NEW semantic segmentation images. The only thing you have to adjust is color, the depth can stay the same
+- [x] trained nerfacto on my student card in multiple conditions: small, med, large video duration, shaky camera
 - results playlist https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
-- next step: introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
 - StyleNeRF: https://jiataogu.me/style_nerf/
   - gpu: NVIDIA TITAN Xp
   - colmap video to cloud point extraction => 15min
   - nerfacto training: 45 min (30 000 steps)
-  - todo: check results for (15 000 steps)
   - inference: 10 seconds for one frame (1920x1080)
-- next step: find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of cards
 
 
 2022-12-12:
 - it's always better to use videos (even if they are <1 sec) because 30fps of 1 second is 30 images
-- todo: caculate conversion of video to colmap
-- todo: caculate training time
-- downsamples of ns-process-data aren't used for anything. Is colmap used for anything?
+- [x] caculate conversion of video to colmap
+- [x] caculate training time
+- downsamples of ns-process-data aren't used for anything. Is downsamples used for anything?
 
 2022-11-17:
 
