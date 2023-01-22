@@ -53,27 +53,5 @@ ns-train nerfacto \
 
 --viewer.quit-on-train-completion True
 
-function train() {
-	echo "Running training"
-	declare -a datasets=("v3_low_motion" "v5_med_motion" "v12_high_motion_360")
-	declare -a models=("nerfacto")
-	for model in "${models[@]}"; do
-		for dataset in "${datasets[@]}"; do
-			echo "Start dataset: $dataset $(date +%F-%H-%M-%S)";
-			filepath_dataset="data/$dataset"
-			logfile="/root/projects/nerf-reserach/logs/log-$dataset-$(date +%F-%H-%M-%S).txt"
-			/usr/bin/time --format='%C took %e seconds' \
-			ns-train $model \
-			--vis viewer \
-			--machine.num-gpus 1 \
-			--viewer.quit-on-train-completion True \
-			--logging.steps-per-log 100 \
-			--data $filepath_dataset \
-			2>&1 | tee $logfile
-			wait;
-			echo "End dataset: $dataset $(date +%F-%H-%M-%S)";
-		done
-	done
-}
-
-train
+# Training
+python3 nerfstudio/scripts/train_wrap.py --models nerfacto --max-num-iterations 5 --datasets data/speci_rgb:data/speci_rgb/specimen_card_mask_seg_mask:data/speci_rgb/specimen_hand_mask_seg_mask/ --logging.steps-per-log 1

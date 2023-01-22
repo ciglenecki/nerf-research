@@ -2,37 +2,60 @@
 # NeRF (Neural Radiance Fields) research
 
 ## Log
-
-2023-01-05:
-- [x] train the model on RGB images, then finetune with sequence images but use only the subset of sequences
-- [ ] comapre results for different amount of steps:
-  - [ ] create a script which will automatically save models every N number of steps
-  - [ ] create a script which will evaluate results for multiple models trained on the same scene
-    - [ ] results should be ran from the same novel views
-    - [ ] results should include numeric metrics
-    - [ ] for each result save a detailed context (config)
-    - [ ] for each result note the time needed to train  
-- [ ] compare how lack of segmentation masks affects NeRF's results
-  - [ ] reduce number of frames (90%, 80% ... 10%), make sure to always include last and first frame for best results
-- [ ] check how do mistakes in segmentation affect the results
-  - [ ] create 5 frames, 1 has wrong segmentation (corner)
-  - [ ] check how do results look around the view which coresponds to that frame
-- [ ] explore hyperparameters
-  - [ ] results should be ran from the same novel views
-  - [ ] results should include numeric metrics
-  - [ ] research which hyperparameters make most sense to change
+- [ ] caculate COLMAP minimum amount of frames
+- [x] create a script which will subset number of images
+- [x] train the model on RGB images, then finetune on segmentation masks
+  - [ ] but use subset of sequences
+  - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
+- [x] export mesh to blender and view it
+- [ ] compare results for different amount of training steps:
+  - [x] create a script which will automatically save models every N training steps
+      - [x] log the train time
+- [ ] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
+  - [x] create better config defaults
+  - [x] automatize segmentation finetuning
+  - [x] automatize multiple architecture training
+  - [ ] research which hyperparameters make most sense to play with
   - [ ] create a script which will train multiple models (grid of parameters)
-  - [ ] for each result save a detailed context (config)
-  - [ ] for each result note the time needed to train
+  - [ ] results should include numeric metrics
+    - [ ] PeakSignalNoiseRatio (psnr)
+    - [ ] structural_similarity_index_measure (ssim)
+    - [ ] LearnedPerceptualImagePatchSimilarity (lpips)
+  - [ ] save a detailed context for each result (config of the model, evaluation time)
+  - [ ] script should render multiple novel views
+    - [ ] programmatically render multiple novel views. How do I programmatically create a camera path? Ideally, the camera path should go in a circle (radius=r) while the point of view is fixed on the id document. Then the camera should come closer to the id document and create another circle (radius=r).
+    - [ ] for each novel view, try to come up with a metric which says how "novel" the view really is. For example, the novel view which is close to the existing frames isn't so novel.
+- [ ] compare how lack of segmentation masks affects NeRF's results
+  - [ ] reduce number of frames (90%, 80% ... 10%, ..., 5 images, 3 images, 2 images, 1 image) and make sure to always include last and first frame
+- [ ] check how mistakes in segmentation affect the results
+  - [ ] create 5 frames, 1 has wrong segmentation (corner of the id document)
+  - [ ] check how do results look around the view which coresponds to that frame
 - [ ] find a way to cut off material whose z depth is larger than the z depth of the id document (cut off everything that's in front of the id document)
-- [ ] export mesh to blender and view it
-- [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
 - [ ] find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of id cards
   - [ ] for start, use 3 video footages
   - [ ] export 3 colmaps
   - [ ] train 3 models
   - [ ] generate novel views
-- [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
+- [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
+  - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
+
+
+
+2023-01-17:
+- [x] create a script which will subset number of images
+- [x] export mesh to blender and view it
+
+
+2023-01-12:
+- [x] train the model on RGB images, then finetune on segmentation
+- [x] compare results for different amount of training steps:
+  - [x] create a script which will automatically save models every N training steps
+      - [x] log the train time
+- [x] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
+  - [x] create better config defaults
+  - [x] automatize segmentation finetuning
+  - [x] automatize multiple architecture training
+
 
 2023-01-04:
 
@@ -94,9 +117,6 @@
 - reading Nerfies: Deformable Neural Radiance Fields
 - reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
-## To-do
-
-- [ ] .keep
 
 ## Nerfies: Deformable Neural Radiance Fields
 

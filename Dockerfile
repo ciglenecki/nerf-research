@@ -2,7 +2,7 @@
 FROM nvidia/cuda:11.7.0-devel-ubuntu22.10
 ENV DEBIAN_FRONTEND=noninteractive
 ## Set timezone as it is required by some packages.
-ENV TZ=Europe/Berlin
+ENV TZ=Europe/Zagreb
 ## CUDA architectures, required by tiny-cuda-nn.
 ENV TCNN_CUDA_ARCHITECTURES=61
 ## CUDA Home, required to find CUDA in some packages.
