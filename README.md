@@ -2,6 +2,7 @@
 # NeRF (Neural Radiance Fields) research
 
 ## Log
+- [ ] find sensible amount of frames for rgb scene
 - [ ] caculate COLMAP minimum amount of frames
 - [x] create a script which will subset number of images
 - [x] train the model on RGB images, then finetune on segmentation masks

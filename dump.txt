@@ -55,3 +55,29 @@ ns-train nerfacto \
 
 # Training
 python3 nerfstudio/scripts/train_wrap.py --models nerfacto --max-num-iterations 5 --datasets data/speci_rgb:data/speci_rgb/specimen_card_mask_seg_mask:data/speci_rgb/specimen_hand_mask_seg_mask/ --logging.steps-per-log 1
+
+
+
+
+# Megatrain all models
+
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_02 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_02 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_03 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_03 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_04 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_04 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_05 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_05 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_06 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_06 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_07 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_07 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_08 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_08 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_12 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_12 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_18 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_18 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_24 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_24 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_30 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_30 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_36 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_36 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_42 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_42 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_48 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_48 --num_downscales 0
+python3 nerfstudio/scripts/process_data.py images --data data-raw/specimen_rgb_n_54 --seg_masks data-raw/specimen_hand_mask data-raw/specimen_card_mask --output data/specimen_rgb_n_54 --num_downscales 0
+
+
+data/specimen_rgb_n_02 data/specimen_rgb_n_03 data/specimen_rgb_n_04 data/specimen_rgb_n_05 data/specimen_rgb_n_06 data/specimen_rgb_n_07 data/specimen_rgb_n_08 data/specimen_rgb_n_12 data/specimen_rgb_n_18 data/specimen_rgb_n_24 data/specimen_rgb_n_30 data/specimen_rgb_n_36 data/specimen_rgb_n_42 data/specimen_rgb_n_48 data/specimen_rgb_n_54
+
+python3 nerfstudio/scripts/train_wrap.py --models nerfacto --max-num-iterations 100_000 --datasets data/specimen_rgb_n_02 data/specimen_rgb_n_03 data/specimen_rgb_n_04 data/specimen_rgb_n_05 data/specimen_rgb_n_06 data/specimen_rgb_n_07 data/specimen_rgb_n_08 data/specimen_rgb_n_12 data/specimen_rgb_n_18 data/specimen_rgb_n_24 data/specimen_rgb_n_30 data/specimen_rgb_n_36 data/specimen_rgb_n_42 data/specimen_rgb_n_48 data/specimen_rgb_n_54

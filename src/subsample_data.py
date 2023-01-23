@@ -61,15 +61,15 @@ def parse_args():
 
 def main():
     args, _ = parse_args()
+    IMAGES_DIR_NAME = "images"
 
     for input_dir in args.input:
         input_dir = Path(input_dir)
-        input_image_dir = Path(input_dir)
+        input_image_dir = Path(input_dir, IMAGES_DIR_NAME)
         input_dir_name = input_dir.name
 
         sequence = sorted([f for f in input_image_dir.iterdir() if f.is_file()])
         sequence_size = len(sequence)
-        zfill_size = len(str(sequence_size))
 
         subset_sizes = []
         subset_sizes.extend(
@@ -94,13 +94,20 @@ def main():
                 sequence_subset = operator.itemgetter(*(indices_picked.tolist()))(
                     sequence
                 )
-                images_dir = Path(
-                    args.output,
-                    f"{input_dir_name}_n_{str(subset_size).zfill(zfill_size)}",
+                subset_dir_name = Path(args.output, f"{input_dir_name}_n_{subset_size}")
+                subset_dir_name.mkdir(parents=True, exist_ok=True)
+
+                # Copy colmap and transforms
+                copytree(
+                    input_dir,
+                    subset_dir_name,
+                    ignore=ignore_patterns(IMAGES_DIR_NAME),
+                    dirs_exist_ok=True,
                 )
-                images_dir.mkdir(parents=True, exist_ok=True)
 
                 for image in sequence_subset:
+                    images_dir = Path(subset_dir_name, IMAGES_DIR_NAME)
+                    images_dir.mkdir(parents=True, exist_ok=True)
                     shutil.copy(image, images_dir)
                     print("Saved to:", str(Path(images_dir, image.name)))
 
