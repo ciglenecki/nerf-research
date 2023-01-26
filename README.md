@@ -2,27 +2,12 @@
 # NeRF (Neural Radiance Fields) research
 
 ## Log
+- [ ] write concrete average time for training
 - [ ] find sensible amount of frames for rgb scene
-- [ ] caculate COLMAP minimum amount of frames
-- [x] create a script which will subset number of images
-- [x] train the model on RGB images, then finetune on segmentation masks
-  - [ ] but use subset of sequences
   - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
-- [x] export mesh to blender and view it
-- [ ] compare results for different amount of training steps:
-  - [x] create a script which will automatically save models every N training steps
-      - [x] log the train time
+- [ ] compare results for different amount of training steps
 - [ ] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
-  - [x] create better config defaults
-  - [x] automatize segmentation finetuning
-  - [x] automatize multiple architecture training
   - [ ] research which hyperparameters make most sense to play with
-  - [ ] create a script which will train multiple models (grid of parameters)
-  - [ ] results should include numeric metrics
-    - [ ] PeakSignalNoiseRatio (psnr)
-    - [ ] structural_similarity_index_measure (ssim)
-    - [ ] LearnedPerceptualImagePatchSimilarity (lpips)
-  - [ ] save a detailed context for each result (config of the model, evaluation time)
   - [ ] script should render multiple novel views
     - [ ] programmatically render multiple novel views. How do I programmatically create a camera path? Ideally, the camera path should go in a circle (radius=r) while the point of view is fixed on the id document. Then the camera should come closer to the id document and create another circle (radius=r).
     - [ ] for each novel view, try to come up with a metric which says how "novel" the view really is. For example, the novel view which is close to the existing frames isn't so novel.
@@ -40,18 +25,57 @@
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
 
+2023-01-26:
+- [x] caculate approximate number of minutes for training:
+  - ```
+    Hardware:
+    TITAN Xp 12GB
+      Memory Speed 11.4 Gbps
+      3840 NVIDIA CUDA Cores
+      1582 Boost Clock (MHz)
+    Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz
 
+    COLMAP video to pointcloud:
+    ~10 minutes
 
+    NERF training:
+    scene: specimen, 60frames, blender
+    model: nerfacto
+    steps: 100_000
+    time: ~207 minutes
+    rate: 483 steps/min
+    rate: 0.00207 min/steps
+    aggregated over 15 sampels, sequence size {12,18,24,30,36,42,48,54}
+
+    optimal num of steps: ??? ~(30 000)
+    optimal time: 62min
+    ```
+- [x] train the model on RGB images but use subset of sequences (n={12,18,24,30,36,42,48,54} out of 60 frames)
+- [x] create a script which evaluates trained models:
+  - [ ] save a detailed context for each result (config of the model, evaluation time)
+  - [x] (PeakSignalNoiseRatio, structural_similarity_index_measure, LearnedPerceptualImagePatchSimilarity, num_rays_per_sec, fps)
+  - [x] to csv
+- Warning: default train/eval split is 0.9 which means that the sequence must contain at least 10 images!
+- [x] caculate COLMAP minimum amount of frames: it works with only 2 frames but results might be bad
+- [x] create multiple camera paths: on path, outside of path, inside of path to evaluate different results
+
+![](imgs/csv_metrics_first_results.jpg)
+![](imgs/2023-01-26-02-45_large_train_split_problem.jpg)
 2023-01-17:
 - [x] create a script which will subset number of images
 - [x] export mesh to blender and view it
+
+![](imgs/specimen_3d_export.jpeg)
 
 
 2023-01-12:
 - [x] train the model on RGB images, then finetune on segmentation
 - [x] compare results for different amount of training steps:
-  - [x] create a script which will automatically save models every N training steps
-      - [x] log the train time
+- [x] create wrap train script [](nerfstudio/scripts/train_wrap.py)
+  - [x] automatically saves models every N training steps
+  - [x] log the train time
+  - [x] train multiple models (grid of parameters)
+  - [x] support segmentation finetuning
 - [x] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
   - [x] create better config defaults
   - [x] automatize segmentation finetuning
