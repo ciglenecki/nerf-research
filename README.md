@@ -1,7 +1,9 @@
 
 # NeRF (Neural Radiance Fields) research
 
+
 ## Log
+
 - [ ] write concrete average time for training
 - [ ] find sensible amount of frames for rgb scene
   - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
@@ -25,31 +27,9 @@
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
 
-2023-01-26:
+#### 2023-01-26:
+
 - [x] caculate approximate number of minutes for training:
-  - ```
-    Hardware:
-    TITAN Xp 12GB
-      Memory Speed 11.4 Gbps
-      3840 NVIDIA CUDA Cores
-      1582 Boost Clock (MHz)
-    Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz
-
-    COLMAP video to pointcloud:
-    ~10 minutes
-
-    NERF training:
-    scene: specimen, 60frames, blender
-    model: nerfacto
-    steps: 100_000
-    time: ~207 minutes
-    rate: 483 steps/min
-    rate: 0.00207 min/steps
-    aggregated over 15 sampels, sequence size {12,18,24,30,36,42,48,54}
-
-    optimal num of steps: ??? ~(30 000)
-    optimal time: 62min
-    ```
 - [x] train the model on RGB images but use subset of sequences (n={12,18,24,30,36,42,48,54} out of 60 frames)
 - [x] create a script which evaluates trained models:
   - [ ] save a detailed context for each result (config of the model, evaluation time)
@@ -61,16 +41,18 @@
 
 ![](imgs/csv_metrics_first_results.jpg)
 ![](imgs/2023-01-26-02-45_large_train_split_problem.jpg)
-2023-01-17:
+
+#### 2023-01-17:
+
 - [x] create a script which will subset number of images
 - [x] export mesh to blender and view it
 
 ![](imgs/specimen_3d_export.jpeg)
 
 
-2023-01-12:
+#### 2023-01-12:
+
 - [x] train the model on RGB images, then finetune on segmentation
-- [x] compare results for different amount of training steps:
 - [x] create wrap train script [](nerfstudio/scripts/train_wrap.py)
   - [x] automatically saves models every N training steps
   - [x] log the train time
@@ -82,7 +64,7 @@
   - [x] automatize multiple architecture training
 
 
-2023-01-04:
+#### 2023-01-04:
 
 - Idea: don't use COLMAP's mask region. Simply further train the network on segmeted video.
 - COLMAP mask regions:
@@ -142,6 +124,49 @@
 - reading Nerfies: Deformable Neural Radiance Fields
 - reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
+
+## Notes
+
+### Finding object of interest (center of the ID)
+
+![](imgs/2023-01-26-15-18-11-2697-point_of_interest_idea.jpg)
+
+Once COLMAP creates a pointcloud from the sequence we would like to find a point of interest which is the center of the identity document. This point is interesting for the following reasons:
+- we can cut off all materials (other points) whose Z dimension is larger than the center of the identity document. We would then remove outliers from the scene and material which coveres the ID in some cases
+- we can always point any camera to point of interest (center of the ID) to get the best looking image
+
+### Generating images from novel views
+![](imgs/2023-01-26-15-25-41-2698-novel-views-cones.jpg)
+
+We want to generate cones which will define multiple camera paths. Camera paths will be used to generate novel views. Each camera path is defined by the radius of the camera path circle (the larger the radius, the more extreme the viewing angle) and distance from camera to the center of the ID (the larger the distance the smaller the ID)
+
+### Speed/stats
+
+```
+Hardware:
+TITAN Xp 12GB
+  Memory Speed 11.4 Gbps
+  3840 NVIDIA CUDA Cores
+  1582 Boost Clock (MHz)
+Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz
+
+COLMAP video to pointcloud:
+~10 minutes
+
+NERF training:
+scene: specimen, 60frames, blender
+model: nerfacto
+steps: 100_000
+time: ~207 minutes
+rate: 483 steps/min
+rate: 0.00207 min/steps
+aggregated over 15 sampels, sequence size {12,18,24,30,36,42,48,54}
+
+optimal num of steps: ??? ~(30 000)
+optimal time: 62min
+
+inference time: 9 frames (1280x720) 2 minutes
+```
 
 ## Nerfies: Deformable Neural Radiance Fields
 
