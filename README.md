@@ -27,6 +27,13 @@
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
 
+#### 2023-01-27:
+
+- done image rendering for novel views for most models. The total number of models is the product of sample_size {12, ..., 54} x step_iter {0, ..., 10_000, ..., 40_000}. For each model, I rendered sequences (9 images) for 4 different camera paths. The conclusions are as follows:
+- the most significant and essential parameter is the size of the sequence. The difference between the sequence size of n=40 and n=56 is huge. Images for n=40 are much worse than n=56.It is possible that it because of the seed, but all sizes n<40 give practically useless images, at least for the particular scene I currently use. I think that the small `n` hurts COLMAP rather than NeRF, but I still have to check that
+- [] try some methods other than COLMAP to create a pointcloud from a sequence
+- `step` (number of iterations, which I said should be n=30_000) gave surprisingly good results for n=10_000 as well. The difference between step=10_000 and step=30_000 is almost minimal, especially in the area of ​​the personal document and hand. Image details are slightly better for n=30_000, but definitely not significantly.
+
 #### 2023-01-26:
 
 - [x] caculate approximate number of minutes for training:
