@@ -1,14 +1,12 @@
 import argparse
-from pathlib import Path
-import matplotlib.pyplot as plt
-import json
 import fileinput
+import json
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 import pandas as pd
-from nerfstudio.scripts.my_utils import (
-    get_sequence_size_from_experiment,
-    get_step_from_ckpt_path,
-    get_timestamp,
-)
+
+from nerfstudio.scripts.my_utils import get_timestamp
 
 
 def parse_args():
@@ -38,25 +36,12 @@ def main():
                 checkpoint_path.rstrip() for checkpoint_path in fileinput.input(file)
             ]
     records = []
-    for metric_path in metrics:
-        # metric_path = fake_metric
-        metric = json.load(open(Path(metric_path), "r"))
-        checkpoint_path = Path(metric["checkpoint"])
-        step = get_step_from_ckpt_path(checkpoint_path)
-        experiment_name = str(checkpoint_path.parent.name)
-        sequence_size = (
-            get_sequence_size_from_experiment(experiment_name)
-            if "_n_" in experiment_name
-            else None
-        )
 
-        record = {}
-        record["experiment_name"] = experiment_name
-        record["step"] = step
-        record["sequence_size"] = sequence_size
-        record["checkpoint_path"] = checkpoint_path
+    for metric_path in metrics:
+        metric = json.load(open(Path(metric_path), "r"))
+        record = metric
         records.append(record)
-        record.update(metric["results"])
+
     df = pd.DataFrame.from_records(records)
     df.to_csv(args.output)
 

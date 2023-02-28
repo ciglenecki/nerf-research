@@ -4,10 +4,8 @@
 
 ## Log
 
-- [ ] write concrete average time for training
-- [ ] find sensible amount of frames for rgb scene
-  - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
-- [ ] compare results for different amount of training steps
+- [ ] run mutiple experiments with same settings to examine how the intial seed impacts the training process
+  - [ ] write concrete average time for training
 - [ ] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
   - [ ] research which hyperparameters make most sense to play with
   - [ ] script should render multiple novel views
@@ -26,6 +24,18 @@
   - [ ] generate novel views
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
+
+#### 2023-02-28:
+
+- [x] find sensible amount of frames for rgb scene: it's about ~ 55 continuous frames
+  - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
+- [x] compare results for different amount of training steps:
+  - optimal number of training step is between 10_000 and 30_000 for nerfacto model which uses default optimizing settings
+  - step size 10_000 compared to 30_000 has similar structural composition but image details were a bit worse
+  - corners of the id document are better shaped at the step size 30_000  
+- [x] fixed viewer which had hardcoded path
+- [x] added ability to use arbitrary train/test indices/images via the `split_indices.json` file
+- [x] added support for finetuning the model on smaller sequence size by remembering the initial training size
 
 #### 2023-01-27:
 
@@ -504,17 +514,61 @@ Permissions:
 find users id and group `echo $("$(id -u):$(id -g)")`
 Docker: `chown -R HERE:HERE directory`
 
+
+RuntimeError: Error(s) in loading state_dict for VanillaPipeline:
+size mismatch for datamanager.train_camera_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
+size mismatch for datamanager.train_ray_generator.pose_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
+size mismatch for datamanager.eval_ray_generator.pose_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
+size mismatch for _model.field.embedding_appearance.embedding.weight: copying a param with shape torch.Size([30, 32]) from checkpoint, the shape in current model is torch.Size([12, 32]).
+
+
+nerfacto.py
+self.field = TCNNNerfactoField
+
+has num_images=self.num_train_data, but this can be still be big beacuse it's only used for Embedding Component
+
+nerfacto_field.py
+TCNNNerfactoField
+num_images
+
+accesses embedding dict with
+camera_indices = ray_samples.camera_indices.squeeze()
+
+TODO: remove dependencie from num_image in ebmedding shape and data loader num_image
+TODO: camera indicies should contain filename or name of the image so we can differenciante which is which
+
+check:
+def set_camera_indices(self, camera_index: int) -> None:
+    """Sets all of the the camera indices to a specific camera index.
+
+    Args:
+        camera_index: Camera index.
+    """
+    self.camera_indices = torch.ones_like(self.origins[..., 0:1]).long() * camera_index
+
+    
+### Sequence size checkpoint issue
+
+Model -> VanillaDataManagerConfig
+
+base_datamanager.py
+
+self.train_camera_optimizer = self.config.camera_optimizer.setup(
+            num_cameras=self.train_dataset.cameras.size, device=self.device
+        )
+
 ## Commands
 
 note: stay on port 7007 because the process is run inside of the docker which exposes the port to 7010
 Training:
 
 ```bash
-/usr/bin/time --format='%C took %e seconds' \
+/usr/bin/v
 ns-train nerfacto --vis viewer \
 --logging.steps-per-log 2500 \
 --machine.num-gpus 1 \
 --data <HERE>
+-- 
 ```
 
 Turn on viewer:

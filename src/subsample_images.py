@@ -1,11 +1,12 @@
 import argparse
-from pathlib import Path
-from enum import Enum
-import numpy as np
 import operator
 import shutil
-from tqdm import tqdm
+from enum import Enum
+from pathlib import Path
 from shutil import copytree, ignore_patterns
+
+import numpy as np
+from tqdm import tqdm
 
 
 class Method(Enum):

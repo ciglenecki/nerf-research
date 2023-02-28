@@ -1,11 +1,12 @@
 import argparse
-from pathlib import Path
-from tqdm import tqdm
-import nerfstudio.scripts.eval as eval
-import tyro
 import fileinput
-import torch
 import gc
+from pathlib import Path
+
+import nerfstudio.scripts.eval as eval
+import torch
+import tyro
+from tqdm import tqdm
 
 
 def parse_args():
@@ -54,9 +55,9 @@ def main():
         config_path = Path(parent_dir, "config.yml")
         metrics_path = Path(parent_dir, f"{args.output_name}-{checkpoint_name}.json")
 
-        if metrics_path.is_file():  # skip existing metric
-            print("Skipping", str(metrics_path))
-            continue
+        # if metrics_path.is_file() and metrics_path.stat().st_size >= 29 :  # skip existing metric
+        #     print("Skipping", str(metrics_path))
+        #     continue
 
         eval_args = [
             "--load-ckpt",
