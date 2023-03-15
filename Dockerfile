@@ -1,5 +1,5 @@
 # Define base image.
-FROM nvidia/cuda:11.7.0-devel-ubuntu22.10
+FROM nvidia/cuda:11.7.1-devel-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ## Set timezone as it is required by some packages.
 ENV TZ=Europe/Zagreb
@@ -7,6 +7,7 @@ ENV TZ=Europe/Zagreb
 ENV TCNN_CUDA_ARCHITECTURES=61
 ## CUDA Home, required to find CUDA in some packages.
 ENV CUDA_HOME="/usr/local/cuda"
+ENV CMAKE_CUDA_ARCHITECTURES=61
 
 # Update and upgrade all packages
 RUN apt update -y
@@ -48,7 +49,9 @@ RUN apt-get install -y \
     qt5-qmake \
     libxcb-util-dev \
     libprotobuf-dev \
-    libatlas-base-dev
+    libatlas-base-dev \
+    xz-utils \
+    nano
 
 # Install GLOG (required by ceres).
 RUN git clone --branch v0.6.0 https://github.com/google/glog.git --single-branch && \
@@ -64,18 +67,26 @@ RUN git clone --branch v0.6.0 https://github.com/google/glog.git --single-branch
 # Add glog path to LD_LIBRARY_PATH.
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
 
+
 # # Ceres solver
-RUN apt-get install libatlas-base-dev libsuitesparse-dev &&\
+RUN apt-get install libsuitesparse-dev &&\
     wget https://github.com/ceres-solver/ceres-solver/archive/refs/tags/2.1.0.tar.gz &&\
     tar zxf 2.1.0.tar.gz &&\
     cd ceres-solver-2.1.0 &&\
     mkdir build &&\
     cd build &&\
-    cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF &&\
+    cmake .. -DCMAKE_CUDA_ARCHITECTURES="61" -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF &&\
     make -j 2 &&\
     make install
 
+# Ceras reqs
+RUN apt-get install -y sqlite3 \
+    libsqlite3-dev \
+    libflann-dev
+
+
 # Compile Colamp
+RUN apt-get install -y libfreeimage-dev nvidia-cuda-toolkit-gcc
 RUN git clone https://github.com/colmap/colmap.git &&\
     cd colmap &&\
     git checkout dev &&\
@@ -96,17 +107,7 @@ RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
 # Dependency for nerfstudio that has to be installed AFTER torch
 RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
-# Arguments required for setting the permissions
-ARG USER_NAME=root
-ARG USER_ID
-ARG GROUP_NAME
-ARG GROUP_ID
-
-# Create account in Docker Container with the same name and group as the current user who is building the Docker image.
-COPY docker_set_perms.sh /tmp/docker_set_perms.sh
-RUN chmod +x /tmp/docker_set_perms.sh && /tmp/docker_set_perms.sh $USER_ID $USER_NAME $GROUP_ID $GROUP_NAME
-
-USER $USER_NAME
+RUN wget -P /blender-3.4.1 https://ftp.nluug.nl/pub/graphics/blender/release/Blender3.4/blender-3.4.1-linux-x64.tar.xz
 
 # Set the pretty and obvious prompts
 ENV TERM xterm-256color
