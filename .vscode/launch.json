@@ -1,0 +1,44 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "Train",
+			"type": "python",
+			"request": "launch",
+			"program": "nerfstudio/scripts/train_wrap.py",
+			"console": "integratedTerminal",
+			"args": "images --no-gpu --data data-raw/man_spiral --num-downscales 0 --output-dir data",
+			"justMyCode": false
+		},
+		{
+			"name": "Preprocess data",
+			"type": "python",
+			"request": "launch",
+			"program": "nerfstudio/scripts/process_data.py",
+			"console": "integratedTerminal",
+			"args": "images --no-gpu --data data/a_3.00_r_0.05_d_0.96/images --num-downscales 0 --output-dir data",
+			"justMyCode": false
+		},
+		{
+			"name": "TEST Train data",
+			"type": "python",
+			"request": "launch",
+			"program": "nerfstudio/scripts/train_wrap.py",
+			"console": "integratedTerminal",
+			"args": "images --no-gpu --data data-raw/man_spiral --num-downscales 0 --output-dir data",
+			"justMyCode": false
+		},
+		{
+			"name": "TEST preprocess data",
+			"type": "python",
+			"request": "launch",
+			"program": "nerfstudio/scripts/process_data.py",
+			"console": "integratedTerminal",
+			"args": "images --no-gpu --data data-raw/man_spiral --num-downscales 0 --output-dir data",
+			"justMyCode": false
+		},
+	]
+}
