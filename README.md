@@ -575,6 +575,8 @@ Turn on viewer:
 
 ns-train nerfacto --vis viewer --viewer.websocket-port=7010 --data data/student-id/light2/ --trainer.load-dir outputs/light2/nerfacto/2022-12-11_183713/nerfstudio_models --viewer.start-train False
 
+blender -b <blendfile> -P <pythonscript>
+
 # Directory structure
 
     ├── LICENSE

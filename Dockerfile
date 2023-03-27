@@ -51,8 +51,10 @@ RUN apt-get install -y \
     libprotobuf-dev \
     libatlas-base-dev \
     xz-utils \
-    nano
+    nano \
+    unzip
 
+RUN apt-get install -y nvidia-cuda-toolkit-gcc
 # Install GLOG (required by ceres).
 RUN git clone --branch v0.6.0 https://github.com/google/glog.git --single-branch && \
     cd glog && \
@@ -69,13 +71,15 @@ ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
 
 
 # # Ceres solver
-RUN apt-get install libsuitesparse-dev &&\
-    wget https://github.com/ceres-solver/ceres-solver/archive/refs/tags/2.1.0.tar.gz &&\
+RUN apt-get install libsuitesparse-dev
+
+RUN wget https://github.com/ceres-solver/ceres-solver/archive/refs/tags/2.1.0.tar.gz &&\
     tar zxf 2.1.0.tar.gz &&\
     cd ceres-solver-2.1.0 &&\
+    echo "set(CMAKE_CUDA_ARCHITECTURES 61)" >> CMakeLists.txt &&\
     mkdir build &&\
     cd build &&\
-    cmake .. -DCMAKE_CUDA_ARCHITECTURES="61" -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF &&\
+    CMAKE_CUDA_ARCHITECTURES="61" cmake .. -DCMAKE_CUDA_ARCHITECTURES="61" -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF &&\
     make -j 2 &&\
     make install
 
@@ -86,10 +90,15 @@ RUN apt-get install -y sqlite3 \
 
 
 # Compile Colamp
-RUN apt-get install -y libfreeimage-dev nvidia-cuda-toolkit-gcc
-RUN git clone https://github.com/colmap/colmap.git &&\
-    cd colmap &&\
-    git checkout dev &&\
+RUN apt-get install -y libfreeimage-dev
+
+# Download Colmap, to /colmap-3.7.tar.gz, unzip to /colmap-3.7/
+RUN wget -O /colmap-3.7.tar.gz https://github.com/colmap/colmap/archive/refs/tags/3.7.tar.gz &&\
+    tar -xzf /colmap-3.7.tar.gz -C / &&\
+    cd /colmap-3.7 &&\
+    sed -i '1s/^/set(CMAKE_CUDA_ARCHITECTURES 61)\n/' CMakeLists.txt &&\
+    sed -i '1s/^/set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} --std c++14")\n/' CMakeLists.txt &&\
+    sed -i '1s/^/set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} --std c++14")\n/' src/CMakeLists.txt &&\
     mkdir build &&\
     cd build &&\
     cmake .. &&\
@@ -107,12 +116,12 @@ RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
 # Dependency for nerfstudio that has to be installed AFTER torch
 RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
-RUN wget -P /blender-3.4.1 https://ftp.nluug.nl/pub/graphics/blender/release/Blender3.4/blender-3.4.1-linux-x64.tar.xz
-
+RUN wget -P / https://ftp.nluug.nl/pub/graphics/blender/release/Blender3.4/blender-3.4.1-linux-x64.tar.xz
+RUN tar -xJf /blender-3.4.1-linux-x64.tar.xz
 # Set the pretty and obvious prompts
 ENV TERM xterm-256color
 RUN echo 'export PS1="\A \[\033[1;36m\]\h\[\033[1;34m\] \w \[\033[0;015m\]\\$ \[$(tput sgr0)\]\[\033[0m\]"' >> ~/.bashrc
-
+ENV PATH="${PATH}:/blender-3.4.1-linux-x64"
 # Set bash entrypoint location to home directory
 # WORKDIR $USER_HOME
 
