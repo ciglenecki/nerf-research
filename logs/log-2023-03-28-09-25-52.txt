@@ -1,0 +1,4 @@
+/usr/bin/time: cannot run ./src/colmaps.sh: Permission denied
+Command exited with non-zero status 126
+./src/colmaps.sh took 0.00 seconds
+End 2023-03-28-09-25-52

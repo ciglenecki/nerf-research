@@ -1,0 +1,19 @@
+[09:27:14] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:17] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:20] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:23] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:26] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:30] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:33] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:36] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:39] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:42] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:45] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:48] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:51] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:54] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:27:57] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+[09:28:00] 💀 No usable images in the data folder.                                             process_data_utils.py:315
+Command exited with non-zero status 1
+./src/colmaps.sh took 49.18 seconds
+End 2023-03-28-09-28-01
