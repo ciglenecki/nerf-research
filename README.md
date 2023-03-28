@@ -577,6 +577,9 @@ ns-train nerfacto --vis viewer --viewer.websocket-port=7010 --data data/student-
 
 blender -b <blendfile> -P <pythonscript>
 
+Divison by zero in rich: export COLUMNS="`tput cols`"; export LINES="`tput lines`"
+
+
 # Directory structure
 
     ├── LICENSE

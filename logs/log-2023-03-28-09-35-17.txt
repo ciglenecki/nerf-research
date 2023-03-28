@@ -1,0 +1,2994 @@
+[09:35:26] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.17_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.17_d_0.96/images_2/frame_00006.png" 
+
+
+[09:35:41] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_10.00_r_0.17_d_0.96/colmap/database.db --image_path data/a_10.00_r_0.17_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[09:36:00] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_10.00_r_0.17_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[09:37:17] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_10.00_r_0.17_d_0.96/colmap/database.db --image_path data/a_10.00_r_0.17_d_0.96/images --output_path data/a_10.00_r_0.17_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[09:38:19] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_10.00_r_0.17_d_0.96/colmap/sparse/0 --output_path data/a_10.00_r_0.17_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[09:38:47] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[09:38:51] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_10.00_r_0.28_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_10.00_r_0.28_d_1.60/images_2/frame_00006.png" 
+
+
+[09:39:01] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_10.00_r_0.28_d_1.60/colmap/database.db --image_path data/a_10.00_r_0.28_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[09:39:20] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_10.00_r_0.28_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[09:40:09] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_10.00_r_0.28_d_1.60/colmap/database.db --image_path data/a_10.00_r_0.28_d_1.60/images --output_path data/a_10.00_r_0.28_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[09:46:24] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_10.00_r_0.28_d_1.60/colmap/sparse/0 --output_path data/a_10.00_r_0.28_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[09:46:49] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[09:46:53] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.26_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.26_d_0.96/images_2/frame_00006.png" 
+
+
+[09:47:16] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_15.00_r_0.26_d_0.96/colmap/database.db --image_path data/a_15.00_r_0.26_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[09:47:36] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_15.00_r_0.26_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[09:49:52] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_15.00_r_0.26_d_0.96/colmap/database.db --image_path data/a_15.00_r_0.26_d_0.96/images --output_path data/a_15.00_r_0.26_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[09:52:51] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_15.00_r_0.26_d_0.96/colmap/sparse/0 --output_path data/a_15.00_r_0.26_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[09:53:39] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[09:53:42] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_15.00_r_0.43_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_15.00_r_0.43_d_1.60/images_2/frame_00006.png" 
+
+
+[09:53:52] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_15.00_r_0.43_d_1.60/colmap/database.db --image_path data/a_15.00_r_0.43_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[09:54:10] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_15.00_r_0.43_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[09:55:03] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_15.00_r_0.43_d_1.60/colmap/database.db --image_path data/a_15.00_r_0.43_d_1.60/images --output_path data/a_15.00_r_0.43_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:01:21] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_15.00_r_0.43_d_1.60/colmap/sparse/0 --output_path data/a_15.00_r_0.43_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:01:28] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 10 images                                                
+                            COLMAP only found poses for 33.33% of the images. This is low.                              
+    This can be caused by a variety of reasons, such poor scene coverage, blurry images, or large exposure changes.     
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:01:31] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.45_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.45_d_0.96/images_2/frame_00006.png" 
+
+
+[10:01:41] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_25.00_r_0.45_d_0.96/colmap/database.db --image_path data/a_25.00_r_0.45_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:01:59] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_25.00_r_0.45_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:03:11] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_25.00_r_0.45_d_0.96/colmap/database.db --image_path data/a_25.00_r_0.45_d_0.96/images --output_path data/a_25.00_r_0.45_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:04:34] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_25.00_r_0.45_d_0.96/colmap/sparse/0 --output_path data/a_25.00_r_0.45_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:04:43] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:04:46] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_25.00_r_0.75_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_25.00_r_0.75_d_1.60/images_2/frame_00006.png" 
+
+
+[10:04:56] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_25.00_r_0.75_d_1.60/colmap/database.db --image_path data/a_25.00_r_0.75_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:05:15] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_25.00_r_0.75_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:06:05] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_25.00_r_0.75_d_1.60/colmap/database.db --image_path data/a_25.00_r_0.75_d_1.60/images --output_path data/a_25.00_r_0.75_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:10:40] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_25.00_r_0.75_d_1.60/colmap/sparse/0 --output_path data/a_25.00_r_0.75_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:10:51] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 12 images                                                
+                                   COLMAP only found poses for 40.00% of the images.                                    
+                                            This isn't great, but may be ok.                                            
+Missing poses can be caused by a variety of reasons, such poor scene coverage, blurry images, or large exposure changes.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:10:58] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.05_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.05_d_0.96/images_2/frame_00006.png" 
+
+
+[10:11:16] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_3.00_r_0.05_d_0.96/colmap/database.db --image_path data/a_3.00_r_0.05_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:11:42] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_3.00_r_0.05_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:13:08] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_3.00_r_0.05_d_0.96/colmap/database.db --image_path data/a_3.00_r_0.05_d_0.96/images --output_path data/a_3.00_r_0.05_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:16:44] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_3.00_r_0.05_d_0.96/colmap/sparse/0 --output_path data/a_3.00_r_0.05_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:17:44] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:17:56] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_3.00_r_0.08_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_3.00_r_0.08_d_1.60/images_2/frame_00006.png" 
+
+
+[10:18:15] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_3.00_r_0.08_d_1.60/colmap/database.db --image_path data/a_3.00_r_0.08_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:18:36] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_3.00_r_0.08_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:19:20] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_3.00_r_0.08_d_1.60/colmap/database.db --image_path data/a_3.00_r_0.08_d_1.60/images --output_path data/a_3.00_r_0.08_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:26:41] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_3.00_r_0.08_d_1.60/colmap/sparse/0 --output_path data/a_3.00_r_0.08_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:26:52] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 13 images                                                
+                                   COLMAP only found poses for 43.33% of the images.                                    
+                                            This isn't great, but may be ok.                                            
+Missing poses can be caused by a variety of reasons, such poor scene coverage, blurry images, or large exposure changes.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:26:55] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.56_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.56_d_0.96/images_2/frame_00006.png" 
+
+
+[10:27:05] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_30.00_r_0.56_d_0.96/colmap/database.db --image_path data/a_30.00_r_0.56_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:27:24] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_30.00_r_0.56_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:28:31] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_30.00_r_0.56_d_0.96/colmap/database.db --image_path data/a_30.00_r_0.56_d_0.96/images --output_path data/a_30.00_r_0.56_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:29:34] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_30.00_r_0.56_d_0.96/colmap/sparse/0 --output_path data/a_30.00_r_0.56_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:29:41] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:29:44] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_30.00_r_0.93_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_30.00_r_0.93_d_1.60/images_2/frame_00006.png" 
+
+
+[10:29:52] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_30.00_r_0.93_d_1.60/colmap/database.db --image_path data/a_30.00_r_0.93_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:30:10] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_30.00_r_0.93_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:30:53] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_30.00_r_0.93_d_1.60/colmap/database.db --image_path data/a_30.00_r_0.93_d_1.60/images --output_path data/a_30.00_r_0.93_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:40:23] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_30.00_r_0.93_d_1.60/colmap/sparse/0 --output_path data/a_30.00_r_0.93_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:40:28] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:40:32] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_0.67_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_0.67_d_0.96/images_2/frame_00006.png" 
+
+
+[10:40:42] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_35.00_r_0.67_d_0.96/colmap/database.db --image_path data/a_35.00_r_0.67_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:41:00] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_35.00_r_0.67_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:42:01] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_35.00_r_0.67_d_0.96/colmap/database.db --image_path data/a_35.00_r_0.67_d_0.96/images --output_path data/a_35.00_r_0.67_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:43:14] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_35.00_r_0.67_d_0.96/colmap/sparse/0 --output_path data/a_35.00_r_0.67_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:43:24] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:43:27] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_35.00_r_1.12_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_35.00_r_1.12_d_1.60/images_2/frame_00006.png" 
+
+
+[10:43:37] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_35.00_r_1.12_d_1.60/colmap/database.db --image_path data/a_35.00_r_1.12_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:43:54] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_35.00_r_1.12_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:44:30] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_35.00_r_1.12_d_1.60/colmap/database.db --image_path data/a_35.00_r_1.12_d_1.60/images --output_path data/a_35.00_r_1.12_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+──────────────────────────────────────────────  💀 💀 💀 ERROR 💀 💀 💀  ───────────────────────────────────────────────
+Error running command: colmap mapper --database_path data/a_35.00_r_1.12_d_1.60/colmap/database.db --image_path 
+data/a_35.00_r_1.12_d_1.60/images --output_path data/a_35.00_r_1.12_d_1.60/colmap/sparse 
+--Mapper.ba_global_function_tolerance 1e-6
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ERROR: failed to create sparse model
+
+[10:55:25] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_0.96_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_0.96_d_0.96/images_2/frame_00006.png" 
+
+
+[10:55:35] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_45.00_r_0.96_d_0.96/colmap/database.db --image_path data/a_45.00_r_0.96_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:55:53] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_45.00_r_0.96_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:56:36] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_45.00_r_0.96_d_0.96/colmap/database.db --image_path data/a_45.00_r_0.96_d_0.96/images --output_path data/a_45.00_r_0.96_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[10:58:00] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_45.00_r_0.96_d_0.96/colmap/sparse/0 --output_path data/a_45.00_r_0.96_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[10:58:05] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[10:58:08] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_45.00_r_1.60_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_45.00_r_1.60_d_1.60/images_2/frame_00006.png" 
+
+
+[10:58:18] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_45.00_r_1.60_d_1.60/colmap/database.db --image_path data/a_45.00_r_1.60_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[10:58:41] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_45.00_r_1.60_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[10:59:08] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_45.00_r_1.60_d_1.60/colmap/database.db --image_path data/a_45.00_r_1.60_d_1.60/images --output_path data/a_45.00_r_1.60_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[11:01:50] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_45.00_r_1.60_d_1.60/colmap/sparse/0 --output_path data/a_45.00_r_1.60_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[11:01:58] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 10 images                                                
+                            COLMAP only found poses for 33.33% of the images. This is low.                              
+    This can be caused by a variety of reasons, such poor scene coverage, blurry images, or large exposure changes.     
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[11:02:04] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.08_d_0.96/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.08_d_0.96/images_2/frame_00006.png" 
+
+
+[11:02:15] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_5.00_r_0.08_d_0.96/colmap/database.db --image_path data/a_5.00_r_0.08_d_0.96/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[11:02:53] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_5.00_r_0.08_d_0.96/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[11:04:26] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_5.00_r_0.08_d_0.96/colmap/database.db --image_path data/a_5.00_r_0.08_d_0.96/images --output_path data/a_5.00_r_0.08_d_0.96/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[11:09:02] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_5.00_r_0.08_d_0.96/colmap/sparse/0 --output_path data/a_5.00_r_0.08_d_0.96/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[11:09:22] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[11:09:25] 🎉 Done copying images.                                                             process_data_utils.py:239
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00012.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00012.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00002.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00002.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00021.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00021.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00025.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00025.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00001.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00001.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00014.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00014.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00011.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00011.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00023.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00023.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00004.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00004.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00005.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00005.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00030.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00030.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00008.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00008.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00018.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00018.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00027.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00027.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00022.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00022.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00016.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00016.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00019.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00019.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00028.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00028.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00024.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00024.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00029.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00029.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00007.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00007.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00009.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00009.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00013.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00013.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00017.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00017.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00026.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00026.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00020.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00020.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00003.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00003.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00010.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00010.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00015.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00015.png" 
+
+
+RUNNING COMMAND
+
+ ffmpeg -y -noautorotate -i "data/a_5.00_r_0.14_d_1.60/images/frame_00006.png"  -q:v 2 -vf scale=iw/2:ih/2  "data/a_5.00_r_0.14_d_1.60/images_2/frame_00006.png" 
+
+
+[11:09:36] 🎉 Done downscaling images.                                                         process_data_utils.py:375
+RUNNING COMMAND
+
+ colmap -h 
+
+
+RUNNING COMMAND
+
+ colmap feature_extractor --database_path data/a_5.00_r_0.14_d_1.60/colmap/database.db --image_path data/a_5.00_r_0.14_d_1.60/images --ImageReader.single_camera 1 --ImageReader.camera_model OPENCV --SiftExtraction.use_gpu 0 
+
+
+[11:09:54] 🎉 Done extracting COLMAP features.                                                       colmap_utils.py:145
+RUNNING COMMAND
+
+ colmap vocab_tree_matcher --database_path data/a_5.00_r_0.14_d_1.60/colmap/database.db --SiftMatching.use_gpu 0 --VocabTreeMatching.vocab_tree_path /root/.local/share/nerfstudio/vocab_tree.fbow 
+
+
+[11:10:40] 🎉 Done matching COLMAP features.                                                         colmap_utils.py:165
+RUNNING COMMAND
+
+ colmap mapper --database_path data/a_5.00_r_0.14_d_1.60/colmap/database.db --image_path data/a_5.00_r_0.14_d_1.60/images --output_path data/a_5.00_r_0.14_d_1.60/colmap/sparse --Mapper.ba_global_function_tolerance 1e-6 
+
+
+[11:17:39] 🎉 Done COLMAP bundle adjustment.                                                         colmap_utils.py:187
+RUNNING COMMAND
+
+ colmap bundle_adjuster --input_path data/a_5.00_r_0.14_d_1.60/colmap/sparse/0 --output_path data/a_5.00_r_0.14_d_1.60/colmap/sparse/0 --BundleAdjustment.refine_principal_point 1 
+
+
+[11:18:03] 🎉 Done refining intrinsics.                                                              colmap_utils.py:198
+────────────────────────────────────────────── 🎉 🎉 🎉 All DONE 🎉 🎉 🎉 ──────────────────────────────────────────────
+                                                Starting with 30 images                                                 
+                                          We downsampled the images by  and 2x                                          
+                                                Colmap matched 30 images                                                
+                                      COLMAP found poses for all images, CONGRATS!                                      
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+./src/colmaps.sh took 6166.16 seconds
+End 2023-03-28-11-18-04
