@@ -25,7 +25,13 @@ def parse_args():
         type=Path,
         help="Directory which contains images and transforms.json",
     )
-    args.add_argument("--out-dir", type=bool, default=False, help="Desc")
+
+    args.add_argument(
+        "--out-dir",
+        type=Path,
+        help="Output directory",
+        default=Path("data", "_indices"),
+    )
     args.add_argument(
         "--train-size",
         metavar="float",
@@ -63,6 +69,8 @@ def main():
     args, unknown_args = parse_args()
     dataset_dir = args.dataset_dir
     train_size, val_size = args.train_size, args.val_size
+    out_dir = args.out_dir
+    Path(out_dir).mkdir(exist_ok=True)
 
     images_dir = Path(dataset_dir, "images")
     image_filenames = [
@@ -97,27 +105,23 @@ def main():
         elif method == Method.DISPERSE_LOOP:
             linspace_num = val_size + 1
 
-        val_indices = np.rint(
-            np.linspace(0, len(image_filenames) - 1, linspace_num)
-        ).astype(int)[:-1]
+        val_indices = np.rint(np.linspace(0, len(image_filenames) - 1, linspace_num)).astype(int)[:-1]
 
         train_indices = np.setdiff1d(np.arange(len(image_filenames)), val_indices)
-        train_mask = np.rint(np.linspace(0, len(train_indices) - 1, train_size)).astype(
-            int
-        )
+        train_mask = np.rint(np.linspace(0, len(train_indices) - 1, train_size)).astype(int)
         train_indices = train_indices[train_mask]
 
         # Create the indices dictionary
         indices = {}
         for idx in val_indices:
-            indices[image_filenames[idx]] = "val"
+            indices["images/" + image_filenames[idx]] = "val"
         for idx in train_indices:
-            indices[image_filenames[idx]] = "train"
+            indices["images/" + image_filenames[idx]] = "train"
 
         # Write indices.json
 
         indices_name = f"train_{str(train_size).zfill(zfill_size)}_val_{str(val_size).zfill(zfill_size)}.json"
-        indices_path = Path(dataset_dir, indices_name)
+        indices_path = Path(out_dir, indices_name)
         with indices_path.open("w") as f:
             json.dump(indices, f, indent=4)
 
