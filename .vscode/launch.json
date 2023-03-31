@@ -10,7 +10,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
-			"args": "--models nerfacto --max-num-iterations 10_000 --datasets data/a_45.00_r_0.96_d_0.96 --indices data/_indices/train_25_val_05.json",
+			"args": "--models nerfacto --max-num-iterations 20_000 --datasets data/three_circles_a_15_25_45 --indices data/_indices/train_81_val_09.json",
 			"justMyCode": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/process_data.py",
 			"console": "integratedTerminal",
-			"args": "images --no-gpu --data data/a_3.00_r_0.05_d_0.96/images --num-downscales 0 --output-dir data",
+			"args": "images --no-gpu --data data-raw/three_circles_a_15_25_45 --num-downscales 0 --output-dir data",
 			"justMyCode": false
 		},
 		{
@@ -28,7 +28,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/viewer/run_viewer.py",
 			"console": "integratedTerminal",
-			"args": "--load-ckpt models/2023-03-27-13-48-58-rk34-a_3.00_r_0.05_d_0.96/step-000004999.ckpt --load-config models/2023-03-27-13-48-58-rk34-a_3.00_r_0.05_d_0.96/config.yml --viewer.skip-openrelay True",
+			"args": "--load-ckpt models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/step-000009999.ckpt --load-config models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/config.yml",
 			"justMyCode": false
 		},
 		{

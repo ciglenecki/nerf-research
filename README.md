@@ -581,6 +581,10 @@ Divison by zero in rich: export COLUMNS="`tput cols`"; export LINES="`tput lines
 
 ns-render --load-config outputs/data-a_30.00_r_0.93_d_1.60/nerfacto/2023-03-29_180504/config.yml --traj filename --camera-path-filenamedata/camera/circle_30_angle_path.json --output-format images --output-path renders/a_30.00_inside
 
+equirect_utils
+
+pip install -U -e .; pip uninstall -y torch torchvision functorch; pip install torch==1.13.1 torchvision functorch --extra-index-url https://download.pytorch.org/whl/cu117; pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
 # Directory structure
 
     ├── LICENSE
