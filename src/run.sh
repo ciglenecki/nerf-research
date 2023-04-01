@@ -8,7 +8,7 @@ function run {
 	touch $logfile;
 	echo "Logging to $logfile";
 	echo "Running $timestamp" >> $logfile;
-	/usr/bin/time --format='%C took %e seconds' ./src/colmaps.sh 2>&1 | tee $logfile
+	/usr/bin/time --format='%C took %e seconds' ./src/train.sh 2>&1 | tee $logfile
 	echo "End $(date +%F-%H-%M-%S)" >> $logfile;
 }
 
