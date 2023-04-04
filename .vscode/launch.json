@@ -32,6 +32,15 @@
 			"justMyCode": false
 		},
 		{
+			"name": "Render",
+			"type": "python",
+			"request": "launch",
+			"program": "src/render_wrap.py",
+			"console": "integratedTerminal",
+			"args": "--checkpoints models/2023-04-01-00-21-41-em80-three_circles_a_15_25_45_train_81_val_09/step-000029999.ckpt --cameras data/camera/three_circles_a_15_25_45_first_9_on_path.json",
+			"justMyCode": false
+		},
+		{
 			"name": "TEST Train data",
 			"type": "python",
 			"request": "launch",
