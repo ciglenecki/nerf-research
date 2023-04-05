@@ -18,6 +18,7 @@ def parse_args():
         # required=True,
         help="Checkpoints to evaluate (file or list of checkpoints)",
     )
+
     args.add_argument(
         "--config-reldir",
         type=Path,
@@ -30,6 +31,18 @@ def parse_args():
         nargs="+",
         required=True,
         help="Camera jsons to evaluate",
+    )
+
+    args.add_argument(
+        "--traj",
+        type=str,
+        required=True,
+        choices=["spiral", "filename", "interpolate", "dataset"],
+    )
+    args.add_argument(
+        "--traj-source",
+        type=Path,
+        help="Dataset directory or cameras.json",
     )
 
     return args.parse_args()
@@ -67,7 +80,9 @@ def main():
                 "--output-path",
                 str(output_directory),
                 "--traj",
-                "filename",
+                str(args.traj),
+                "--traj-source",
+                str(args.traj_dataset),
             ]
 
             tyro.cli(RenderTrajectory, args=eval_args).main()

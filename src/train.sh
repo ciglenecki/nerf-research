@@ -1,0 +1,2 @@
+python3 nerfstudio/scripts/train_wrap.py --models nerfacto --max-num-iterations 30_000 --datasets data/a_30.00_r_0.93_d_1.60 --indices data/_indices/train_25_val_05.json
+python3 nerfstudio/scripts/train_wrap.py --models nerfacto --max-num-iterations 30_000 --datasets data/three_circles_a_15_25_45 --indices data/_indices/train_81_val_09.json
