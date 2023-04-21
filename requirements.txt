@@ -5,3 +5,4 @@ functorch
 matplotlib
 numpy
 setuptools
+git+https://github.com/ayaanzhaque/instruct-nerf2nerf
