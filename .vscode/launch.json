@@ -37,7 +37,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/viewer/run_viewer.py",
 			"console": "integratedTerminal",
-			"args": "--load-ckpt models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/step-000009999.ckpt --load-config models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/config.yml",
+			"args": "--load-ckpt models/2023-04-20-16-15-53-gt30-small_three_circles_a_15_25_45_train_25_val_05/step-000029999.ckpt --load-config models/2023-04-20-16-05-48-pj97-small_three_circles_a_15_25_45_train_25_val_05/config.yml",
 			"justMyCode": false
 		},
 		{

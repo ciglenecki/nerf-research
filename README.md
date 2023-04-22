@@ -559,6 +559,20 @@ self.train_camera_optimizer = self.config.camera_optimizer.setup(
 
 ## Commands
 
+Websocket wokring config:
+docker:
+--network=host -p 7010:7010
+
+WS server:
+localhost 7007
+
+SSH
+-L 7010:127.0.0.1:7010
+
+WS clinet
+ws://127.0.0.1:7010
+Browser websocket client
+
 note: stay on port 7007 because the process is run inside of the docker which exposes the port to 7010
 Training:
 
