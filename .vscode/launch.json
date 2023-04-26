@@ -19,7 +19,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
-			"args": "--models in2n-tiny --max-num-iterations 30_000 --datasets data/small_three_circles_a_15_25_45/ --indices data/_indices/train_25_val_05.json",
+			"args": "--models in2n-tiny --load-config models/2023-04-20-16-05-48-pj97-small_three_circles_a_15_25_45_train_25_val_05/config.yml --load-ckpt models/2023-04-24-20-33-44-vw31-small_three_circles_a_15_25_45_train_25_val_05/step-000012000.ckpt --max-num-iterations 30_000 --datasets data/small_three_circles_a_15_25_45/ --indices data/_indices/train_25_val_05.json",
 			"justMyCode": false
 		},
 		{
