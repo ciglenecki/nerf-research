@@ -1,1 +1,1 @@
-from scripts.render import RenderTrajectory
+from nerfstudio.scripts.render import RenderTrajectory

@@ -6,8 +6,9 @@ from pathlib import Path
 import torch
 import tyro
 import yaml
-from scripts.render import RenderTrajectory
 from tqdm import tqdm
+
+from nerfstudio.scripts.render import RenderTrajectory
 
 
 def parse_args():
