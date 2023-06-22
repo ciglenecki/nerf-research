@@ -597,6 +597,8 @@ ns-render --load-config outputs/data-a_30.00_r_0.93_d_1.60/nerfacto/2023-03-29_1
 
 equirect_utils
 
+ns-process-data images --data data-raw/three_circles_a_15_25_45/ --output-dir data/test --no-gpu --num-downscales 0
+
 pip install -U -e .; pip uninstall -y torch torchvision functorch; pip install torch==1.13.1 torchvision functorch --extra-index-url https://download.pytorch.org/whl/cu117; pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 
@@ -612,6 +614,11 @@ python3 src/render_wrap.py \
 --traj filename \
 --camera-path-filename data/camera/three_circles_a_15_25_45_first_9_on_path.json \
 --output-format images
+
+blender python3
+
+export PYTHONPATH="/home/matej/venv-310/lib/python3.11/site-packages:/home/matej/venv-310/lib/python3.10/site-packages:/home/matej/venv-310/lib/python3.10/site-packages"
+source ~/venv-310/bin/activate
 
 # Directory structure
 

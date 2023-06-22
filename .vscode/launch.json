@@ -10,7 +10,7 @@
 			"request": "launch",
 			"program": "nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
-			"args": "--models tensorf --max-num-iterations 30_000 --datasets data/a_30.00_r_0.93_d_1.60 --indices data/_indices/train_25_val_05.json",
+			"args": "--models kplanes --max-num-iterations 30_000 --datasets data/a_30.00_r_0.93_d_1.60 --indices data/_indices/train_25_val_05.json",
 			"justMyCode": false
 		},
 		{
