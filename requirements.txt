@@ -5,4 +5,7 @@ functorch
 matplotlib
 numpy
 setuptools
+torchtyping
+PyYAML==5.4.1
+pygments
 git+https://github.com/ayaanzhaque/instruct-nerf2nerf

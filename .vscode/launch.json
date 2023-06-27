@@ -8,16 +8,16 @@
 			"name": "Train",
 			"type": "python",
 			"request": "launch",
-			"program": "nerfstudio/scripts/train_wrap.py",
+			"program": "nerfstudio/nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
-			"args": "--models kplanes --max-num-iterations 30_000 --datasets data/a_30.00_r_0.93_d_1.60 --indices data/_indices/train_25_val_05.json",
+			"args": "--models tensorf --steps-per-save 500 --max-num-iterations 30_000 --datasets data/n_81_a_30.00 --indices_file data/n_81_a_30.00/indices.json",
 			"justMyCode": false
 		},
 		{
 			"name": "Preprocess data",
 			"type": "python",
 			"request": "launch",
-			"program": "nerfstudio/scripts/process_data.py",
+			"program": "nerfstudio/nerfstudio/scripts/process_data.py",
 			"console": "integratedTerminal",
 			"args": "images --no-gpu --data data-raw/three_circles_a_15_25_45 --num-downscales 0 --output-dir data",
 			"justMyCode": false
@@ -26,7 +26,7 @@
 			"name": "Viewer",
 			"type": "python",
 			"request": "launch",
-			"program": "nerfstudio/scripts/viewer/run_viewer.py",
+			"program": "nerfstudio/nerfstudio/scripts/viewer/run_viewer.py",
 			"console": "integratedTerminal",
 			"args": "--load-ckpt models/2023-04-20-16-15-53-gt30-small_three_circles_a_15_25_45_train_25_val_05/step-000029999.ckpt --load-config models/2023-04-20-16-05-48-pj97-small_three_circles_a_15_25_45_train_25_val_05/config.yml",
 			"justMyCode": false
@@ -44,7 +44,7 @@
 			"name": "TEST Train data",
 			"type": "python",
 			"request": "launch",
-			"program": "nerfstudio/scripts/train_wrap.py",
+			"program": "nerfstudio/nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
 			"args": "images --no-gpu --data data-raw/man_spiral --num-downscales 0 --output-dir data",
 			"justMyCode": false
@@ -53,9 +53,18 @@
 			"name": "TEST preprocess data",
 			"type": "python",
 			"request": "launch",
-			"program": "nerfstudio/scripts/process_data.py",
+			"program": "nerfstudio/nerfstudio/scripts/process_data.py",
 			"console": "integratedTerminal",
 			"args": "images --no-gpu --data data-raw/man_spiral --num-downscales 0 --output-dir data",
+			"justMyCode": false
+		},
+		{
+			"name": "Eval",
+			"type": "python",
+			"request": "launch",
+			"program": "nerfstudio/nerfstudio/scripts/eval.py",
+			"console": "integratedTerminal",
+			"args": "--load-ckpt models/2023-06-26-05-40-31-pq15-n_81_a_30.00_indices-tensorf/step-000028000.ckpt --load-config models/2023-06-26-05-40-31-pq15-n_81_a_30.00_indices-tensorf/config.yml",
 			"justMyCode": false
 		},
 	]

@@ -105,16 +105,16 @@ RUN wget -O /colmap-3.7.tar.gz https://github.com/colmap/colmap/archive/refs/tag
     make -j 2 &&\
     make install
 
-COPY requirements.txt /tmp/requirements.txt
-COPY requirements-dev.txt /tmp/requirements-dev.txt
+# COPY requirements.txt /tmp/requirements.txt
+# COPY requirements-dev.txt /tmp/requirements-dev.txt
 
 # Install python packets
-RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
+# RUN pip install --no-cache-dir --upgrade pip
+# RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
 
 # Dependency for nerfstudio that has to be installed AFTER torch
-RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+# RUN pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 RUN wget -P / https://ftp.nluug.nl/pub/graphics/blender/release/Blender3.4/blender-3.4.1-linux-x64.tar.xz
 RUN tar -xJf /blender-3.4.1-linux-x64.tar.xz
