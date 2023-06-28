@@ -10,16 +10,16 @@
 # python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_25.00 --indices_file data/n_81_a_25.00/indices.json
 # python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_25.00 --indices_file data/n_81_a_25.00/indices.json
 # python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_20.00 --indices_file data/n_81_a_20.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_20.00 --indices_file data/n_81_a_20.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_15.00 --indices_file data/n_81_a_15.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_15.00 --indices_file data/n_81_a_15.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_10.00 --indices_file data/n_81_a_10.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_10.00 --indices_file data/n_81_a_10.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_5.00 --indices_file data/n_64_a_5.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_64_a_5.00 --indices_file data/n_64_a_5.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_30.00 --indices_file data/n_64_a_30.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_20.00 --indices_file data/n_81_a_20.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_15.00 --indices_file data/n_81_a_15.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_15.00 --indices_file data/n_81_a_15.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_81_a_10.00 --indices_file data/n_81_a_10.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_81_a_10.00 --indices_file data/n_81_a_10.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_5.00 --indices_file data/n_64_a_5.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_64_a_5.00 --indices_file data/n_64_a_5.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_30.00 --indices_file data/n_64_a_30.00/indices.json
 python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_64_a_30.00 --indices_file data/n_64_a_30.00/indices.json
-python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_25.00 --indices_file data/n_64_a_25.00/indices.json
+# python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_25.00 --indices_file data/n_64_a_25.00/indices.json
 python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_64_a_25.00 --indices_file data/n_64_a_25.00/indices.json
 python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models tensorf --datasets data/n_64_a_20.00 --indices_file data/n_64_a_20.00/indices.json
 python3 nerfstudio/nerfstudio/scripts/train_wrap.py --max-num-iterations 35_000 --models nerfacto --datasets data/n_64_a_20.00 --indices_file data/n_64_a_20.00/indices.json
