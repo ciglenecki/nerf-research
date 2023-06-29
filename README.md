@@ -599,6 +599,8 @@ equirect_utils
 
 ns-process-data images --data data-raw/three_circles_a_15_25_45/ --output-dir data/test --no-gpu --num-downscales 0
 
+
+
 pip install -U -e .; pip uninstall -y torch torchvision functorch; pip install torch==1.13.1 torchvision functorch --extra-index-url https://download.pytorch.org/whl/cu117; pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 
@@ -623,6 +625,10 @@ export PYTHONPATH="/home/matej/venv-310/lib/python3.11/site-packages:/home/matej
 source ~/venv-310/bin/activate
 
 python3 nerfstudio/scripts/train_wrap.py --models tensorf --max-num-iterations 30_000 --datasets data/n_81_a_30.00 --steps_per_save 1000
+
+
+AttributeError: 'MLP' object has no attribute 'layers'
+pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 # Directory structure
 

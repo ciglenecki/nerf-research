@@ -67,5 +67,23 @@
 			"args": "--load-ckpt models/2023-06-26-05-40-31-pq15-n_81_a_30.00_indices-tensorf/step-000028000.ckpt --load-config models/2023-06-26-05-40-31-pq15-n_81_a_30.00_indices-tensorf/config.yml",
 			"justMyCode": false
 		},
+		{
+			"name": "Eval multi",
+			"type": "python",
+			"request": "launch",
+			"program": "src/eval_multiple.py",
+			"console": "integratedTerminal",
+			"args": "",
+			"justMyCode": false
+		},
+		{
+			"name": "Generate latex from metrics",
+			"type": "python",
+			"request": "launch",
+			"program": "src/generate_latex_angle_generalization.py",
+			"console": "integratedTerminal",
+			"args": "",
+			"justMyCode": false
+		},
 	]
 }

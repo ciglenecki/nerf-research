@@ -8,4 +8,5 @@ setuptools
 torchtyping
 PyYAML==5.4.1
 pygments
+tabulate
 git+https://github.com/ayaanzhaque/instruct-nerf2nerf
