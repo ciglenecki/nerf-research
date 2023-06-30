@@ -11,7 +11,6 @@ import torch
 import yaml
 from arrow import get
 from regex import P
-from sympy import latex
 from tqdm import tqdm
 
 from nerfstudio.scripts.my_utils import (
@@ -34,19 +33,26 @@ metrics_capitalized = {
 
 
 def main():
-    model_dirs = Path("models").glob("*indices*tensorf*")
+    model_dirs = Path("models").glob("*indices*nerfacto*")
     # Generating unseen angles with +10 deg angless
 
     num_test_images = 5
     test_angle_increment = 5
 
-    # angle, n=64, {metrics}
+    # {
+    #     15: # angle
+    #         64: { # n
+    #             "psnr": 3
+    #             "ssim": 3
+    #             "lpips": 3
+    #         }
+    # }
+
     result: dict[str, dict[str, float]] = {}
     for model_dir in tqdm(model_dirs):
         # yaml_config_path = model_dir / "config.yml"
         models = list(model_dir.glob("*.ckpt"))
-        final_step_models = [model for model in models if ("28000" in str(model)) or ("29999" in str(model))]
-        # final_step_models = [model for model in models if ("30000" in str(model)) or ("29999" in str(model))]
+        final_step_models = [model for model in models if ("30000" in str(model))]
 
         if len(final_step_models) == 0:
             print("warning: no final step model found for", model_dir)
@@ -59,8 +65,8 @@ def main():
             print(f"warning: no metric for model {str(model_dir)}")
             continue
 
-        # test_angles = [scene_angle + (i * test_angle_increment) for i in range(1, num_test_images + 1)]
-        test_angles = [35, 40, 45]
+        test_angles = [scene_angle + (i * test_angle_increment) for i in range(1, num_test_images + 1)]
+        # test_angles = [35, 40, 45]
 
         for metric_json in metrics_jsons:
             # is_test = "test" in str(metric_json)
@@ -114,11 +120,12 @@ def main():
 
         for metric in ["psnr", "ssim", "lpips"]:
             metric_name = metrics_capitalized[metric]
-            image_filename = f"angle_generalization_{metric}.png"
+            image_filename = f"angle_generalization_{metric}_scene_{angle:.2f}.png"
             drop_metrics = [m for m in ["psnr", "ssim", "lpips"] if m != metric]
             df = pd.DataFrame(flattened)
             df.drop(drop_metrics, axis=1, inplace=True)
-            df.pivot(index="angle", columns="n", values="psnr").plot.line()
+
+            df.pivot(index="angle", columns="n", values=metric).plot.line()
             plt.legend(title="br. slika u skupu za učenje")
             plt.title(f"{metric_name} za neviđene kuteve gledišta")
             plt.ylabel(metric_name)

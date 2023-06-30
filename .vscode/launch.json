@@ -10,7 +10,7 @@
 			"request": "launch",
 			"program": "nerfstudio/nerfstudio/scripts/train_wrap.py",
 			"console": "integratedTerminal",
-			"args": "--models tensorf --steps-per-save 500 --max-num-iterations 30_000 --datasets data/n_81_a_30.00 --indices_file data/n_81_a_30.00/indices.json",
+			"args": "--models nerfacto --max-num-iterations 30_001 --datasets data/n_121_a_30.00_r_0.80_2.40 --indices_file data/n_121_a_30.00_r_0.80_2.40/indices.json",
 			"justMyCode": false
 		},
 		{
