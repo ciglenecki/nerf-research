@@ -8,7 +8,7 @@ import tyro
 import yaml
 from tqdm import tqdm
 
-from nerfstudio.scripts.render import RenderTrajectory
+from nerfstudio.scripts.render import RenderCameraPath
 
 
 def parse_args():
@@ -35,16 +35,17 @@ def parse_args():
     )
 
     args.add_argument(
-        "--traj",
-        type=str,
-        required=True,
-        choices=["spiral", "filename", "interpolate", "dataset"],
+        "--no-use-crop",
+        action="store_true",
+        default=False,
     )
-    args.add_argument(
-        "--traj-source",
-        type=Path,
-        help="Dataset directory or cameras.json",
-    )
+
+    # args.add_argument(
+    #     "--traj",
+    #     type=str,
+    #     required=True,
+    #     choices=["spiral", "filename", "interpolate", "dataset"],
+    # )
 
     return args.parse_args()
 
@@ -69,24 +70,29 @@ def main():
             output_directory = Path("renders", camera_path.stem, f"{config.experiment_name}-{checkpoint_name}")
             output_directory.mkdir(parents=True, exist_ok=True)
 
-            eval_args = [
-                "--load-ckpt",
-                str(checkpoint_path),
-                "--load-config",
-                str(config_path),
-                "--camera-path-filename",
-                str(camera_path),
-                "--output-format",
-                "images",
-                "--output-path",
-                str(output_directory),
-                "--traj",
-                str(args.traj),
-                "--traj-source",
-                str(args.traj_dataset),
-            ]
+            # eval_args = [
+            #     "camera-path",
+            #     "--load-ckpt",
+            #     str(checkpoint_path),
+            #     "--load-config",
+            #     str(config_path),
+            #     "--camera-path-filename",
+            #     str(camera_path),
+            #     "--output-format",
+            #     "images",
+            #     "--output-path",
+            #     str(output_directory),
+            # ]
 
-            tyro.cli(RenderTrajectory, args=eval_args).main()
+            RenderCameraPath(
+                load_ckpt=checkpoint_path,
+                load_config=config_path,
+                camera_path_filename=camera_path,
+                output_format="images",
+                output_path=output_directory,
+                use_crop=not args.no_use_crop,
+            ).main()
+            # tyro.cli(RenderTrajectory, args=eval_args).main()
 
             # Clear cache
             torch.cuda.empty_cache()
