@@ -124,9 +124,13 @@ def main():
             drop_metrics = [m for m in ["psnr", "ssim", "lpips"] if m != metric]
             df = pd.DataFrame(flattened)
             df.drop(drop_metrics, axis=1, inplace=True)
+            print(df)
+
+            degree_symbol = "\u00b0"
+            legend_labels = [f"{a}{degree_symbol}" for a in df["scene_angle"].unique()]
 
             df.pivot(index="angle", columns="n", values=metric).plot.line()
-            plt.legend(title="br. slika u skupu za učenje")
+            plt.legend(title="br. slika u skupu za učenje", labels=legend_labels)
             plt.title(f"{metric_name} za neviđene kuteve gledišta")
             plt.ylabel(metric_name)
             plt.savefig(image_filename)

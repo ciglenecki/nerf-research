@@ -54,9 +54,9 @@ def main():
     args = parse_args()
 
     # Generating unseen angles with +10 deg angless
+    picked_scene_angle = 10
     test_angle_increment = 2.5
-    picked_n = 121
-    experiment_name = f"angle_generalization_n_{picked_n}_{args.suffix}"
+    experiment_name = f"img_size_scene_angle_{picked_scene_angle}_{args.suffix}"
 
     # {
     #     10: # scene angle
@@ -109,9 +109,9 @@ def main():
     flattened = []
 
     for n, metrics_big in result.items():
-        if n != picked_n:
-            continue
         for scene_angle, metrics_small in metrics_big.items():
+            if scene_angle != picked_scene_angle:
+                continue
             for angle, metric_dict in metrics_small.items():
                 # for scene_angle, scene_angle_metrics in result.items():
                 #     for angle, scene_angle_offset_metrics in scene_angle_metrics.items():
@@ -163,10 +163,10 @@ def main():
 
         df = pd.DataFrame(flattened)
         df.drop(drop_metrics, axis=1, inplace=True)
-        df.pivot(index="angle", columns="scene_angle", values=metric).plot.line()
-
+        lines = df.pivot(index="angle", columns="n", values=metric).plot.line()
         degree_symbol = "\u00b0"  # Degree symbol
-        legend_labels = [f"{n_unique}{degree_symbol}" for n_unique in df["scene_angle"].unique()]
+        print(lines.fmt_ydata)
+        legend_labels = [f"{line.get_label()} {degree_symbol}" for n_unique in df["n"].unique()]
 
         plt.legend(title="Maksimalni viđeni kut gledišta", labels=legend_labels)
         plt.title(f"{metric_name} za neviđene kuteve gledišta")
