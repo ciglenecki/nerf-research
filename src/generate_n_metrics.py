@@ -30,7 +30,6 @@ def format_degrees(value, pos=None):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--suffix", type=str, required=True)
     parser.add_argument("--checkpoints", type=Path, nargs="+", required=True)
     parser.add_argument("--metric_json_name", type=Path, default="step-000030000_metrics_test.json")
     args = parser.parse_args()
@@ -44,9 +43,9 @@ metrics_fullname = {
 }
 
 metrics_capitalized = {
-    "psnr": "PSNR",
-    "ssim": "SSIM",
-    "lpips": "LPIPS",
+    "psnr": r"PSNR $\uparrow$",
+    "ssim": r"SSIM $\uparrow$",
+    "lpips": r"LPIPS $\downarrow$",
 }
 
 
@@ -56,7 +55,17 @@ def main():
     # Generating unseen angles with +10 deg angless
     picked_scene_angle = 10
     test_angle_increment = 2.5
-    experiment_name = f"img_size_scene_angle_{picked_scene_angle}_{args.suffix}"
+    suffix = ""
+    is_test = "test" in str(args.metric_json_name)
+    is_bounded = "bounded" in str(args.metric_json_name)
+    suffix += "_test" if is_test else "_val"
+    suffix += "_bounded" if is_bounded else "_unbounded"
+    if "card_mask" in str(args.checkpoints[0]):
+        suffix += "card_mask"
+    if "hand_mask" in str(args.checkpoints[0]):
+        suffix += "hand_mask"
+
+    experiment_name = f"img_size_scene_angle_{picked_scene_angle}_{suffix}"
 
     # {
     #     10: # scene angle
@@ -131,19 +140,22 @@ def main():
     SSIM_KEY = r"SSIM \uparrow"
     LPIPS_KEY = r"LPIPS \downarrow"
     latex_dict = {
-        "Maksimalni viđeni kut gledišta": [],
-        "horizontalni kut gledišta": [],
+        # "Maksimalni viđeni kut smjera očišta": [],
+        "Br. slika u skupu za učenje": [],
+        "horizontalni kut smjera očišta": [],
         PSNR_KEY: [],
         SSIM_KEY: [],
         LPIPS_KEY: [],
     }
 
     for v in flattened:
-        latex_dict["Maksimalni viđeni kut gledišta"].append(v["scene_angle"])
-        latex_dict["horizontalni kut gledišta"].append(v["angle"])
+        latex_dict["Br. slika u skupu za učenje"].append(v["n"])
+        # latex_dict["Maksimalni viđeni kut očišta"].append(v["scene_angle"])
+        latex_dict["horizontalni kut smjera očišta"].append(v["angle"])
         latex_dict[PSNR_KEY].append(f"{v['psnr']:.2f}")
         latex_dict[SSIM_KEY].append(f"{v['ssim']:.2f}")
         latex_dict[LPIPS_KEY].append(f"{v['lpips']:.2f}")
+
     latex_table = tabulate.tabulate(
         latex_dict,
         tablefmt="latex_raw",
@@ -159,19 +171,14 @@ def main():
         image_filename = f"{experiment_name}_{metric}.png"
         drop_metrics = [m for m in ["psnr", "ssim", "lpips"] if m != metric]
 
-        # for scene_angle in result.keys():
-
         df = pd.DataFrame(flattened)
         df.drop(drop_metrics, axis=1, inplace=True)
-        lines = df.pivot(index="angle", columns="n", values=metric).plot.line()
-        degree_symbol = "\u00b0"  # Degree symbol
-        print(lines.fmt_ydata)
-        legend_labels = [f"{line.get_label()} {degree_symbol}" for n_unique in df["n"].unique()]
+        df.pivot(index="angle", columns="n", values=metric).plot.line()
 
-        plt.legend(title="Maksimalni viđeni kut gledišta", labels=legend_labels)
-        plt.title(f"{metric_name} za neviđene kuteve gledišta")
+        plt.legend(title="Br. slika u skupu za učenje")
+        plt.title(f"{metric_name} u ovisnosti o broju slika u skupu za učenje")
         plt.ylabel(metric_name)
-        plt.xlabel("Horizontalni kut gledišta (°)")
+        plt.xlabel("Horizontalni kut smjera očišta (°)")
         plt.gca().xaxis.set_major_formatter(mtick.FuncFormatter(format_degrees))
         print("Saving file:", image_filename)
         plt.savefig(image_filename)
