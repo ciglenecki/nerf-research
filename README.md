@@ -1,57 +1,78 @@
 
 # NeRF (Neural Radiance Fields) research
 
+## 💡 Research statement and problem overview
 
-## Log
+The document verification company I worked with asked me to research and evaluate Neural Radiance Fields (NeRF) to generate synthetic data.
 
-- [ ] run mutiple experiments with same settings to examine how the intial seed impacts the training process
-  - [ ] write concrete average time for training
-- [ ] evaluate multiple models (different amount of training, different hyperparameters...) trained on the same scene
-  - [ ] research which hyperparameters make most sense to play with
-  - [ ] script should render multiple novel views
-    - [ ] programmatically render multiple novel views. How do I programmatically create a camera path? Ideally, the camera path should go in a circle (radius=r) while the point of view is fixed on the id document. Then the camera should come closer to the id document and create another circle (radius=r).
-    - [ ] for each novel view, try to come up with a metric which says how "novel" the view really is. For example, the novel view which is close to the existing frames isn't so novel.
-- [ ] compare how lack of segmentation masks affects NeRF's results
-  - [ ] reduce number of frames (90%, 80% ... 10%, ..., 5 images, 3 images, 2 images, 1 image) and make sure to always include last and first frame
-- [ ] check how mistakes in segmentation affect the results
-  - [ ] create 5 frames, 1 has wrong segmentation (corner of the id document)
-  - [ ] check how do results look around the view which coresponds to that frame
-- [ ] find a way to cut off material whose z depth is larger than the z depth of the id document (cut off everything that's in front of the id document)
-- [ ] find out how efficient the process of creating new images is. How much compute time is needed to generate X amount of new images from Y amount of id cards
-  - [ ] for start, use 3 video footages
-  - [ ] export 3 colmaps
-  - [ ] train 3 models
-  - [ ] generate novel views
+During the collaboration I did the following:
+1. built a proof-of-concept model that generates personal document images from novel scene views.
+2. identified constraints under which the NeRF model generates high quality images, including:
+     - number of training and eval images
+     - maximum viewpoint angle change
+     - input image resolution
+3. quantified NeRF's novel view synthesis in two regimes:
+     - interpolation: views between observed viewpoints
+     - extrapolation: views outside the training viewpoint radius
+4. developed segmentation mask generation via transferred learning, while minimizing number of segmentation frames and training steps required for a trained NeRF to generalize masks to novel views
+5. developing an automated cropping method to isolate the central object of interest (the document) and reduce foreground and background image artifacts
+
+## 📝 Log
+
+- [x] ran mutiple experiments with same settings to examine how the intial seed impacts the training process
+  - [x] write concrete average time for training
+- [x] evaluated multiple models (different amount of training, different hyperparameters...) trained on the same scene
+  - [x] researched and found optimal hyperparameters
+  - [x] wrote a script that renders novel views
+    - programmatically render multiple novel views. How do I programmatically create a camera path? Ideally, the camera path should go in a circle (radius=r) while the point of view is fixed on the id document. Then the camera should come closer to the id document and create another circle (radius=r).
+    - for each novel view, try to come up with a metric which says how "novel" the view really is. For example, the novel view which is close to the existing frames isn't so novel.
+- [x] compared how lack of segmentation masks affects NeRF's results
+  - [x] reduce number of frames (90%, 80% ... 10%, ..., 5 images, 3 images, 2 images, 1 image) and make sure to always include last and first frame
+- [x] numerically showed how mistakes in segmentation affect the results
+  - created 5 frames, 1 has wrong segmentation (corner of the id document)
+  - check how the segmentation mask behaves in novel views around the corrupted mask segmentation
+    - [x] the segmentation error blends linearly from corrupted view to an correct/representative view
+- [x] developed a way to cut off material whose z depth is larger than the z depth of the id document (cut off everything that's in front of the id document)
+- [x] calculate the compute needed generate X amount of new images from Y amount of id cards
+  - use 3 video footages
+  - export 3 colmaps
+  - train 3 models
+  - generate novel views
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
+- results at the beginning (first day):  https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
 
-#### 2023-02-28:
+### 2023-02-28
 
-- [x] find sensible amount of frames for rgb scene: it's about ~ 55 continuous frames
-  - [ ] check if evaluation can be skipped when training (self.eval_iteration(step))
-- [x] compare results for different amount of training steps:
+- [x] calculated number of sensible amount of frames for rgb scene based on image metrics and: it's ~55 continuous frames
+  - [x] check if evaluation can be skipped when training (self.eval_iteration(step))
+- [x] compared results for different amount of training steps:
   - optimal number of training step is between 10_000 and 30_000 for nerfacto model which uses default optimizing settings
   - step size 10_000 compared to 30_000 has similar structural composition but image details were a bit worse
-  - corners of the id document are better shaped at the step size 30_000  
-- [x] fixed viewer which had hardcoded path
+  - corners of the id document are better shaped at the step size 30_000 
+  - the suggested training step count is 15_000
 - [x] added ability to use arbitrary train/test indices/images via the `split_indices.json` file
 - [x] added support for finetuning the model on smaller sequence size by remembering the initial training size
+- [x] fixed viewer which had hardcoded path
 
-#### 2023-01-27:
+### 2023-01-27
 
-- done image rendering for novel views for most models. The total number of models is the product of sample_size {12, ..., 54} x step_iter {0, ..., 10_000, ..., 40_000}. For each model, I rendered sequences (9 images) for 4 different camera paths. The conclusions are as follows:
-- the most significant and essential parameter is the size of the sequence. The difference between the sequence size of n=40 and n=56 is huge. Images for n=40 are much worse than n=56.It is possible that it because of the seed, but all sizes n<40 give practically useless images, at least for the particular scene I currently use. I think that the small `n` hurts COLMAP rather than NeRF, but I still have to check that
-- [] try some methods other than COLMAP to create a pointcloud from a sequence
+- [x] performed image rendering for novel views for all parameter combinations. The total number of scenes/models is the product of sample_size {12, ..., 54} x step_iter {0, ..., 10_000, ..., 40_000}. For each model, I rendered sequences (9 images) for 4 different camera paths. The conclusions are as follows:
+- [x] performed analysis of all combinations 
+- the most significant and essential parameter is the size of the sequence (this was obvious but it was necessary to prove numerically and determine the proper threshold)
+- `n` (number of training training images) the difference between the sequence size of n=40 and n=56 is huge. Images for n=40 are much worse than n=56.It is possible that it because of the seed, but all sizes n<40 give practically useless images, at least for the particular scene I currently use.
+  - the issue is that the small `n` hurts COLMAP rather than NeRF
+    - try some methods other than COLMAP to create a pointcloud from a sequence
 - `step` (number of iterations, which I said should be n=30_000) gave surprisingly good results for n=10_000 as well. The difference between step=10_000 and step=30_000 is almost minimal, especially in the area of ​​the personal document and hand. Image details are slightly better for n=30_000, but definitely not significantly.
 
-#### 2023-01-26:
+### 2023-01-26
 
-- [x] caculate approximate number of minutes for training:
-- [x] train the model on RGB images but use subset of sequences (n={12,18,24,30,36,42,48,54} out of 60 frames)
-- [x] create a script which evaluates trained models:
-  - [ ] save a detailed context for each result (config of the model, evaluation time)
+- 50 frames is a viable option for training the scene with Nerfacto model
+- [x] calculated approximate number of minutes for training
+- [x] trained the model on RGB images but use subset of sequences (n={12,18,24,30,36,42,48,54} out of 60 frames)
+- [x] created a script which evaluates trained models:
+  - [x] saved a detailed context for each result (config of the model, evaluation time)
   - [x] (PeakSignalNoiseRatio, structural_similarity_index_measure, LearnedPerceptualImagePatchSimilarity, num_rays_per_sec, fps)
-  - [x] to csv
 - Warning: default train/eval split is 0.9 which means that the sequence must contain at least 10 images!
 - [x] caculate COLMAP minimum amount of frames: it works with only 2 frames but results might be bad
 - [x] create multiple camera paths: on path, outside of path, inside of path to evaluate different results
@@ -59,17 +80,17 @@
 ![](imgs/csv_metrics_first_results.jpg)
 ![](imgs/2023-01-26-02-45_large_train_split_problem.jpg)
 
-#### 2023-01-17:
+#### 2023-01-17
 
-- [x] create a script which will subset number of images
-- [x] export mesh to blender and view it
+- [x] created a script that automatically generates N number of images within a given angle (horizontal and vertical) range
+- export mesh to blender and view it
 
 ![](imgs/specimen_3d_export.jpeg)
 
 
-#### 2023-01-12:
+### 2023-01-12
 
-- [x] train the model on RGB images, then finetune on segmentation
+- [x] trained the model RGB images, then i finetuned the model with b/w segmentation masks. the total number of steps was 5% of the RGB training steps. The knowledge transfers really well
 - [x] create wrap train script [](nerfstudio/scripts/train_wrap.py)
   - [x] automatically saves models every N training steps
   - [x] log the train time
@@ -81,7 +102,7 @@
   - [x] automatize multiple architecture training
 
 
-#### 2023-01-04:
+### 2023-01-04
 
 - Idea: don't use COLMAP's mask region. Simply further train the network on segmeted video.
 - COLMAP mask regions:
@@ -89,10 +110,9 @@
   - COLMAP supports masking of keypoints during feature extraction by passing a mask_path to a folder with image masks. For a given image, the corresponding mask must have the same sub-path below this root as the image has below image_path. The filename must be equal, aside from the added extension .png. For example, for an image image_path/abc/012.jpg, the mask would be mask_path/abc/012.jpg.png. No features will be extracted in regions, where the mask image is black (pixel intensity value 0 in grayscale).
 - how to open Colmap model? `Import Model -> sparse/0`
 
-2022-12-15:
+### 2022-12-15
 - [x] train a nerf on a scene. Then freeze the MLP and fine-tune it by using NEW semantic segmentation images. The only thing you have to adjust is color, the depth can stay the same
 - [x] trained nerfacto on my student card in multiple conditions: small, med, large video duration, shaky camera
-- results playlist https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
 - StyleNeRF: https://jiataogu.me/style_nerf/
   - gpu: NVIDIA TITAN Xp
   - colmap video to cloud point extraction => 15min
@@ -100,17 +120,17 @@
   - inference: 10 seconds for one frame (1920x1080)
 
 
-2022-12-12:
-- it's always better to use videos (even if they are <1 sec) because 30fps of 1 second is 30 images
-- [x] caculate conversion of video to colmap
-- [x] caculate training time
+### 2022-12-12
+- if we have two approaches: images (n=5) or video (1sec), which should we use?: it's always better to use videos (even if they are <1 sec) because 30fps of 1 second is 30 images. Plus, we need extra images for eval.
+- [x] calculate total conversion of video to colmap
+- [x] calcualte total training time
 - downsamples of ns-process-data aren't used for anything. Is downsamples used for anything?
 
-2022-11-17:
+### 2022-11-17
 
-- note taking and complete understanding of Mip-NeRF paper https://github.com/google/mipnerf
+- reading the paper Mip-NeRF https://github.com/google/mipnerf
 - setup Docker image which installs everything needed to run the [nerfstudio](https://github.com/nerfstudio-project/nerfstudio) project
-  - also because my local machine has <= 6GB VRAM and I'm forced to use the server
+  - move to a dedicated server because my local machine has <= 6GB VRAM
 - took pictures and videos of my student id card in multiple conditions
   - perfect lightning
   - lower resolution image
@@ -119,27 +139,27 @@
   - video of the id card
 - plan: try out all dataset variations on models out of the box models: [instant-ngp](https://docs.nerf.studio/en/latest/nerfology/methods/instant_ngp.html), [mip-nerf](https://docs.nerf.studio/en/latest/nerfology/methods/mipnerf.html), [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html)
 
-2022-11-03:
+### 2022-11-03:
 
-- note taking and complete understanding of Nerfies paper https://nerfies.github.io/
+- reading the paper Nerfies paper https://nerfies.github.io/
 - found "nerfacc" which offers efficient ray marching and volumetric rendering https://github.com/KAIR-BAIR/nerfacc
-- Light Field Neural Rendering: great for hologram reflection https://light-field-neural-rendering.github.io/
+- reading the paper Light Field Neural Rendering: great for hologram reflection https://light-field-neural-rendering.github.io/
 - plan: further reserach and collecting more approaches to try and combine them:
   - plenoxels (no neural networks) https://alexyu.net/plenoxels/
   - Mip-NeRF 360 (CVPR 2022) https://jonbarron.info/mipnerf360/
   - Direct Voxel Grid Optimization (CVPR 2022) https://sunset1995.github.io/dvgo/
 
-2022-10-27:
+### 2022-10-27
 
-- caculator results (out-of-the-box [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html) model):
+- first day testing: caculator results (out-of-the-box [nerfacto](https://docs.nerf.studio/en/latest/nerfology/methods/nerfacto.html) model):
   - ![](./imgs/first-caculator.jpg)
   - shot 10 images of a caculator with variying extreme angle differences https://www.youtube.com/watch?v=0SqYMH9wiwg
   - used nerfstudio to create a first result https://github.com/nerfstudio-project/nerfstudio
   - model "Nerfacto". "Flagship method which uses techniques from Mip-NeRF 360 and Instant-NGP." https://github.com/nerfstudio-project/nerfstudio/blob/main/nerfstudio/models/nerfacto.py
   - tried to perform training with instant-ngp (instant nerf) but ran out of memory, will try it on a dedicated server
 - installing and preparing starting https://github.com/nerfstudio-project/nerfstudio
-- reading Nerfies: Deformable Neural Radiance Fields
-- reading Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
+- reading the paper Nerfies: Deformable Neural Radiance Fields
+- reading the paper Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields
 
 
 ## Notes
@@ -157,7 +177,7 @@ Once COLMAP creates a pointcloud from the sequence we would like to find a point
 
 We want to generate cones which will define multiple camera paths. Camera paths will be used to generate novel views. Each camera path is defined by the radius of the camera path circle (the larger the radius, the more extreme the viewing angle) and distance from camera to the center of the ID (the larger the distance the smaller the ID)
 
-### Speed/stats
+### Benchmarking
 
 ```
 Hardware:
@@ -185,7 +205,7 @@ optimal time: 62min
 inference time: 9 frames (1280x720) 2 minutes
 ```
 
-## Nerfies: Deformable Neural Radiance Fields
+## ✍️ Nerfies: Deformable Neural Radiance Fields
 
 https://nerfies.github.io/
 
@@ -346,7 +366,7 @@ Jacobian - matrix of gradients (partial derivatives)
 
 ![](imgs/jacobian.jpg)
 
-## Mip-NeRF
+## ✍️ Mip-NeRF
 
 https://github.com/google/mipnerf
 
@@ -490,19 +510,12 @@ Other:
 - reduces avg. error by 60% on a challenging multiscale variant dataset
 - frustum - portion of a solid (normally a pyramid or a cone) that lies between one or two parallel planes cutting it
 
-## (work in progress) instant-ngp
 
-.keep
-
-## (work in progress) Mip-NeRF 360: Unbounded
-
-.keep
-
-## Resources
+## Extra resources
 
 https://dellaert.github.io/NeRF22/ list of nerfs
 
-## Technical
+## 🛠️ Technical notes
 
 - run `sudo rm /etc/apt/sources.list.d/cuda*` after cuda uninstalling
 - `export TCNN_CUDA_ARCHITECTURES=75` https://developer.nvidia.com/cuda-gpus
@@ -510,33 +523,46 @@ https://dellaert.github.io/NeRF22/ list of nerfs
 - Use ceres-solver 2.1.0 when building
 - Can't find cuda? Set proper CUDA_HOME, CUDA_PATH and add cuda/bin to path
 
-Permissions:
-find users id and group `echo $("$(id -u):$(id -g)")`
-Docker: `chown -R HERE:HERE directory`
 
+user_id + group_id
 
+```
+USER_AND_GROUP="$(id -u):$(id -g)"
+chown -R $USER_AND_GROUP$:$USER_AND_GROUP .
+```
+
+Runtime error
+```
 RuntimeError: Error(s) in loading state_dict for VanillaPipeline:
 size mismatch for datamanager.train_camera_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
 size mismatch for datamanager.train_ray_generator.pose_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
 size mismatch for datamanager.eval_ray_generator.pose_optimizer.pose_adjustment: copying a param with shape torch.Size([30, 6]) from checkpoint, the shape in current model is torch.Size([12, 6]).
 size mismatch for _model.field.embedding_appearance.embedding.weight: copying a param with shape torch.Size([30, 32]) from checkpoint, the shape in current model is torch.Size([12, 32]).
+```
+
+### Nerfstudio
 
 
 nerfacto.py
+```
 self.field = TCNNNerfactoField
 
-has num_images=self.num_train_data, but this can be still be big beacuse it's only used for Embedding Component
+# has num_images=self.num_train_data, but this can be still be big beacuse it's only used for Embedding Component
+```
+
 
 nerfacto_field.py
+```
 TCNNNerfactoField
 num_images
+```
 
 accesses embedding dict with
+```
 camera_indices = ray_samples.camera_indices.squeeze()
+```
 
-TODO: remove dependencie from num_image in ebmedding shape and data loader num_image
-TODO: camera indicies should contain filename or name of the image so we can differenciante which is which
-
+```
 check:
 def set_camera_indices(self, camera_index: int) -> None:
     """Sets all of the the camera indices to a specific camera index.
@@ -545,7 +571,7 @@ def set_camera_indices(self, camera_index: int) -> None:
         camera_index: Camera index.
     """
     self.camera_indices = torch.ones_like(self.origins[..., 0:1]).long() * camera_index
-
+```
     
 ### Sequence size checkpoint issue
 
@@ -559,6 +585,7 @@ self.train_camera_optimizer = self.config.camera_optimizer.setup(
 
 ## Commands
 
+```
 Websocket wokring config:
 docker:
 --network=host -p 7010:7010
@@ -574,8 +601,9 @@ ws://127.0.0.1:7010
 Browser websocket client
 
 note: stay on port 7007 because the process is run inside of the docker which exposes the port to 7010
-Training:
+```
 
+Training:
 ```bash
 /usr/bin/v
 ns-train nerfacto --vis viewer \
@@ -585,50 +613,69 @@ ns-train nerfacto --vis viewer \
 -- 
 ```
 
-Turn on viewer:
+How to turn on the viewer
 
+```bash
 ns-train nerfacto --vis viewer --viewer.websocket-port=7010 --data data/student-id/light2/ --trainer.load-dir outputs/light2/nerfacto/2022-12-11_183713/nerfstudio_models --viewer.start-train False
+```
 
-blender -b <blendfile> -P <pythonscript>
-
-Divison by zero in rich: export COLUMNS="`tput cols`"; export LINES="`tput lines`"
-
+```
 ns-render --load-config outputs/data-a_30.00_r_0.93_d_1.60/nerfacto/2023-03-29_180504/config.yml --traj filename --camera-path-filenamedata/camera/circle_30_angle_path.json --output-format images --output-path renders/a_30.00_inside
+```
 
-equirect_utils
 
+```
+blender -b <blendfile> -P <pythonscript>
+```
+
+Divison by zero in rich
+```
+export COLUMNS="`tput cols`"; export LINES="`tput lines`"
+```
+
+
+processing data
+
+```
 ns-process-data images --data data-raw/three_circles_a_15_25_45/ --output-dir data/test --no-gpu --num-downscales 0
+```
 
-
-
-pip install -U -e .; pip uninstall -y torch torchvision functorch; pip install torch==1.13.1 torchvision functorch --extra-index-url https://download.pytorch.org/whl/cu117; pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
-
-
-pip install -r requirements.txt; pip install -r requirements-dev.txt; pip install nerfstudio/[gen]; pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
-
+Render script
+```
 python3 src/render_wrap.py \
 --load-ckpt models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/step-000009999.ckpt \
 --traj filename \
 --camera-path-filename data/camera/three_circles_a_15_25_45_first_9_on_path.json \
 --output-format images
+```
 
-
+```
 python3 src/render_wrap.py \
 --load-ckpt models/2023-03-31-16-16-13-cu37-three_circles_a_15_25_45_train_81_val_09/step-000009999.ckpt \
 --traj filename \
 --camera-path-filename data/camera/three_circles_a_15_25_45_first_9_on_path.json \
 --output-format images
+```
+
+Train script
+```
+python3 nerfstudio/scripts/train_wrap.py --models tensorf --max-num-iterations 30_000 --datasets data/n_81_a_30.00 --steps_per_save 1000
+```
+
 
 blender python3
 
+```
 export PYTHONPATH="/home/matej/venv-310/lib/python3.11/site-packages:/home/matej/venv-310/lib/python3.10/site-packages:/home/matej/venv-310/lib/python3.10/site-packages"
 source ~/venv-310/bin/activate
+```
 
-python3 nerfstudio/scripts/train_wrap.py --models tensorf --max-num-iterations 30_000 --datasets data/n_81_a_30.00 --steps_per_save 1000
 
 
 AttributeError: 'MLP' object has no attribute 'layers'
+```
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+```
 
 # Directory structure
 
