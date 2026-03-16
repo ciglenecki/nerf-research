@@ -38,6 +38,12 @@ During the collaboration I did the following:
   - export 3 colmaps
   - train 3 models
   - generate novel views
+- [x] develop algorithm for finding the central object
+  - assumption: center of the image is also center of the object (images)
+  - [x] idea: shoot rays from the origin of the image (object center) and find a point `p` that minimizes distance from all rays
+  - [ ] idea2: accumulate density and check where the largest density is
+    - problem might be that there's a lot of dense densitiy along the whole document
+    - this can be solved by taking the 2d center of these high density points
 - [ ] introduce style variability to generate new type of image (for example, change the text of person’s name, change person’s face…)
   - [ ] check out how to embed information into nerfs https://distill.pub/2018/feature-wise-transformations/
 - results at the beginning (first day):  https://www.youtube.com/watch?v=BGwiesxWRcs&list=PL9LfBxpj0EM6GpKXLqxVCV1wuc0GFtD6k&index=2
